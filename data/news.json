@@ -1,0 +1,249 @@
+{
+  "section": {
+    "title": "News",
+    "subtitle": "Updates and Announcements",
+    "description": "Latest HUMACH Research updates across website releases, research directions, development work, publications, internship calls, team activity, workshops, and collaboration news."
+  },
+  "items": [
+    {
+      "id": "humach-contact-collaboration-page",
+      "title": "Contact and collaboration gateway added for HUMACH inquiries",
+      "date": "2026-06-26",
+      "type": "Website Update",
+      "category": "Contact",
+      "status": "Completed",
+      "statusClass": "active",
+      "featured": true,
+      "summary": "A dedicated contact page was added to guide research, development, internship, publication, and collaboration inquiries.",
+      "details": "The page uses structured contact pathways and contact.json so future communication routes, methods, and checklists can be updated without rewriting page HTML.",
+      "audience": "Students, collaborators, developers, researchers, and partner organizations",
+      "tags": [
+        "Contact",
+        "Collaboration",
+        "Gateway",
+        "Website"
+      ],
+      "links": [
+        {
+          "label": "Contact HUMACH",
+          "url": "contact.html"
+        }
+      ]
+    },
+    {
+      "id": "humach-publications-directory",
+      "title": "Publications directory prepared for verified research outputs",
+      "date": "2026-06-26",
+      "type": "Website Update",
+      "category": "Outputs",
+      "status": "Completed",
+      "statusClass": "active",
+      "featured": true,
+      "summary": "A dedicated publications page was added to organize journals, conference papers, technical reports, software papers, datasets, and student outputs.",
+      "details": "The page uses structured JSON content so future publication metadata, DOI links, code links, venues, and related projects can be updated without rewriting HTML.",
+      "audience": "Researchers, students, collaborators, and publication contributors",
+      "tags": [
+        "Publications",
+        "Research Outputs",
+        "Structured Updates",
+        "Website"
+      ],
+      "links": [
+        {
+          "label": "View Publications",
+          "url": "publications.html"
+        }
+      ]
+    },
+    {
+      "id": "humach-team-directory",
+      "title": "Team directory added for researchers, developers, interns, and collaborators",
+      "date": "2026-06-26",
+      "type": "Website Update",
+      "category": "People",
+      "status": "Completed",
+      "statusClass": "active",
+      "featured": true,
+      "summary": "The website now includes a structured team page with roles for leadership, researchers, developers, interns, students, collaborators, and alumni.",
+      "details": "Team profiles can highlight photos, interests, connected projects, outputs, and contact pathways as HUMACH grows.",
+      "audience": "Current members, future members, collaborators, and visitors",
+      "tags": [
+        "Team",
+        "Profiles",
+        "Collaboration",
+        "Internship"
+      ],
+      "links": [
+        {
+          "label": "View Team",
+          "url": "team.html"
+        }
+      ]
+    },
+    {
+      "id": "humach-opportunity-pathways",
+      "title": "Opportunity pathways created for internships, thesis projects, and collaboration",
+      "date": "2026-06-26",
+      "type": "Opportunity Update",
+      "category": "Opportunities",
+      "status": "Open",
+      "statusClass": "recruiting",
+      "featured": true,
+      "summary": "The opportunities page now presents research internships, development internships, thesis supervision, volunteer research assistance, and collaboration routes.",
+      "details": "Each pathway can include expected skills, contribution modes, outputs, topics, and application instructions through the JSON data layer.",
+      "audience": "Students, developers, early researchers, and external collaborators",
+      "tags": [
+        "Internships",
+        "Students",
+        "Research Training",
+        "Development"
+      ],
+      "links": [
+        {
+          "label": "Explore Opportunities",
+          "url": "opportunities.html"
+        }
+      ]
+    },
+    {
+      "id": "humach-development-page",
+      "title": "Development page launched for prototypes, dashboards, tools, and AI systems",
+      "date": "2026-06-26",
+      "type": "Development Update",
+      "category": "Development",
+      "status": "Completed",
+      "statusClass": "active",
+      "summary": "HUMACH now has a dedicated development page for software tools, AI prototypes, research dashboards, data pipelines, and deployable systems.",
+      "details": "The page helps separate practical engineering work from research-area descriptions while keeping both connected through projects and outputs.",
+      "audience": "Developers, interns, research engineers, and collaborators",
+      "tags": [
+        "Development",
+        "Software",
+        "AI Systems",
+        "Dashboards"
+      ],
+      "links": [
+        {
+          "label": "View Development",
+          "url": "development.html"
+        }
+      ]
+    },
+    {
+      "id": "humach-project-directory",
+      "title": "Project directory added for active, completed, and recruiting work",
+      "date": "2026-06-26",
+      "type": "Project Update",
+      "category": "Projects",
+      "status": "Completed",
+      "statusClass": "active",
+      "summary": "The projects page now supports filterable cards for research projects, development projects, healthcare AI work, data science, education, and recruiting topics.",
+      "details": "Projects can connect to research areas, teams, publications, GitHub links, demos, and future application pathways.",
+      "audience": "Project contributors, interns, researchers, and collaborators",
+      "tags": [
+        "Projects",
+        "Recruiting",
+        "Research",
+        "Development"
+      ],
+      "links": [
+        {
+          "label": "View Projects",
+          "url": "projects.html"
+        }
+      ]
+    },
+    {
+      "id": "humach-research-page",
+      "title": "Research areas page created for HUMACH scientific scope",
+      "date": "2026-06-26",
+      "type": "Research Update",
+      "category": "Research",
+      "status": "Completed",
+      "statusClass": "active",
+      "summary": "The research page now presents HUMACH themes across AI, machine learning, biomedical computing, health informatics, NLP, GenAI, software engineering, and education technology.",
+      "details": "Each area can connect to topics, projects, publications, and student opportunities through structured content.",
+      "audience": "Researchers, students, supervisors, and partner organizations",
+      "tags": [
+        "Research Areas",
+        "AI",
+        "Health",
+        "Computing"
+      ],
+      "links": [
+        {
+          "label": "View Research",
+          "url": "research.html"
+        }
+      ]
+    },
+    {
+      "id": "humach-data-driven-structure",
+      "title": "HUMACH data-driven website structure created",
+      "date": "2026-06-26",
+      "type": "Website Update",
+      "category": "Data Layer",
+      "status": "Completed",
+      "statusClass": "active",
+      "summary": "The website now includes JSON files for research areas, projects, team profiles, publications, opportunities, development categories, and news.",
+      "details": "This makes the static site easier to maintain because content can be edited in data files instead of copied into multiple HTML pages.",
+      "audience": "Website maintainers and future HUMACH contributors",
+      "tags": [
+        "JSON",
+        "Static Site",
+        "Maintainability",
+        "Content System"
+      ],
+      "links": [
+        {
+          "label": "View Homepage",
+          "url": "index.html"
+        }
+      ]
+    }
+  ],
+  "channels": [
+    {
+      "name": "Research Updates",
+      "icon": "bi bi-cpu",
+      "summary": "New themes, project directions, papers, experiments, datasets, and research milestones."
+    },
+    {
+      "name": "Development Updates",
+      "icon": "bi bi-code-square",
+      "summary": "New prototypes, dashboards, tools, open-source releases, and deployment progress."
+    },
+    {
+      "name": "Opportunity Calls",
+      "icon": "bi bi-person-plus",
+      "summary": "Internship calls, thesis topics, collaboration openings, and student contribution pathways."
+    },
+    {
+      "name": "Team and Community",
+      "icon": "bi bi-people",
+      "summary": "Member profiles, collaborator updates, workshops, seminars, and community activities."
+    }
+  ],
+  "workflow": [
+    {
+      "step": "01",
+      "title": "Capture",
+      "summary": "Record the update as a structured item with title, date, type, category, summary, details, and links."
+    },
+    {
+      "step": "02",
+      "title": "Classify",
+      "summary": "Assign tags such as Research, Development, Publications, Opportunity, Team, Website, or Collaboration."
+    },
+    {
+      "step": "03",
+      "title": "Connect",
+      "summary": "Link the update to relevant pages, projects, publications, opportunities, team profiles, or external forms."
+    },
+    {
+      "step": "04",
+      "title": "Publish",
+      "summary": "Publish updates as announcements, calls, releases, achievements, or project milestones for the HUMACH community."
+    }
+  ]
+}

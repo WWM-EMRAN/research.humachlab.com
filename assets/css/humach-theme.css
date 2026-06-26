@@ -1,0 +1,5106 @@
+/*--------------------------------------------------------------
+# HUMACH Research Brand Foundation
+# Step 1: Identity, colors, typography, core components
+--------------------------------------------------------------*/
+:root {
+  --default-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --heading-font: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --nav-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --background-color: #f7fbff;
+  --default-color: #41516a;
+  --heading-color: #071426;
+  --accent-color: #19d3ff;
+  --accent-color-2: #7c3cff;
+  --accent-color-3: #00ffa8;
+  --surface-color: #ffffff;
+  --contrast-color: #071426;
+
+  --humach-navy: #071426;
+  --humach-deep: #030817;
+  --humach-blue: #19d3ff;
+  --humach-violet: #7c3cff;
+  --humach-green: #00ffa8;
+  --humach-muted: #7d8ca3;
+  --humach-border: rgba(25, 211, 255, 0.18);
+  --humach-card-shadow: 0 24px 60px rgba(7, 20, 38, 0.10);
+
+  --nav-color: rgba(255, 255, 255, 0.86);
+  --nav-hover-color: #19d3ff;
+  --nav-mobile-background-color: #081426;
+  --nav-dropdown-background-color: #071426;
+  --nav-dropdown-color: rgba(255, 255, 255, 0.88);
+  --nav-dropdown-hover-color: rgba(25, 211, 255, 0.14);
+}
+
+.light-background {
+  --background-color: #eef7ff;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #030817;
+  --default-color: rgba(255, 255, 255, 0.82);
+  --heading-color: #ffffff;
+  --surface-color: rgba(255, 255, 255, 0.08);
+  --contrast-color: #071426;
+}
+
+body.humach-theme {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(25, 211, 255, 0.08), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(124, 60, 255, 0.07), transparent 32%),
+    var(--background-color);
+}
+
+body.humach-theme h1,
+body.humach-theme h2,
+body.humach-theme h3,
+body.humach-theme h4,
+body.humach-theme h5,
+body.humach-theme h6 {
+  letter-spacing: -0.025em;
+}
+
+/* Header */
+.humach-header {
+  --background-color: rgba(3, 8, 23, 0.72);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 0;
+}
+
+.index-page .humach-header {
+  --background-color: rgba(3, 8, 23, 0.22);
+}
+
+.index-page.scrolled .humach-header,
+.scrolled .humach-header {
+  --background-color: rgba(3, 8, 23, 0.92);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
+.humach-logo img {
+  width: 42px;
+  height: 42px;
+  max-height: 42px;
+  object-fit: contain;
+  border-radius: 14px;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.humach-logo .brand-wordmark {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.header .humach-logo h1 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.humach-logo small {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.1;
+  max-width: 260px;
+}
+
+.header .humach-nav-cta,
+.header .humach-nav-cta:focus {
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  border: 0;
+  border-radius: 999px;
+  font-weight: 800;
+  box-shadow: 0 14px 34px rgba(25, 211, 255, 0.26);
+}
+
+.header .humach-nav-cta:hover,
+.header .humach-nav-cta:focus:hover {
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-green), var(--humach-blue));
+  transform: translateY(-1px);
+}
+
+@media (min-width: 1200px) {
+  .humach-theme .navmenu a,
+  .humach-theme .navmenu a:focus {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    padding: 18px 13px;
+  }
+
+  .humach-theme .navmenu li:hover > a,
+  .humach-theme .navmenu .active,
+  .humach-theme .navmenu .active:focus {
+    color: var(--humach-blue);
+  }
+}
+
+@media (max-width: 1199px) {
+  .humach-theme .navmenu ul {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.36);
+  }
+
+  .humach-theme .navmenu a,
+  .humach-theme .navmenu a:focus {
+    color: rgba(255, 255, 255, 0.86);
+    font-weight: 700;
+  }
+
+  .humach-logo small {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .header .humach-logo h1 {
+    font-size: 18px;
+  }
+
+  .humach-logo img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header .humach-nav-cta {
+    display: none;
+  }
+}
+
+/* Shared components */
+.section-kicker,
+.brand-eyebrow,
+.identity-card-label {
+  color: var(--humach-blue);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.btn-humach {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 15px;
+  transition: 0.25s ease;
+}
+
+.btn-humach-primary {
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  box-shadow: 0 20px 46px rgba(25, 211, 255, 0.24);
+}
+
+.btn-humach-primary:hover {
+  color: #061221;
+  transform: translateY(-2px);
+  box-shadow: 0 26px 54px rgba(25, 211, 255, 0.34);
+}
+
+.btn-humach-outline {
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.btn-humach-outline:hover {
+  color: #ffffff;
+  border-color: rgba(25, 211, 255, 0.68);
+  background: rgba(25, 211, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Section title refresh */
+.humach-theme .section-title {
+  padding-bottom: 44px;
+}
+
+.humach-theme .section-title h2 {
+  color: var(--humach-blue);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.humach-theme .section-title h2::after {
+  height: 2px;
+  background: linear-gradient(90deg, var(--humach-blue), var(--humach-violet));
+}
+
+.humach-theme .section-title p {
+  font-size: clamp(30px, 4vw, 48px);
+  text-transform: none;
+  letter-spacing: -0.05em;
+}
+
+/* Hero */
+.humach-hero {
+  overflow: hidden;
+  padding: 170px 0 110px;
+  min-height: 100vh;
+}
+
+.humach-hero img {
+  filter: saturate(0.95) contrast(1.05);
+}
+
+.humach-hero:before {
+  background:
+    linear-gradient(110deg, rgba(3, 8, 23, 0.96), rgba(3, 8, 23, 0.72) 42%, rgba(7, 20, 38, 0.82)),
+    radial-gradient(circle at 22% 34%, rgba(25, 211, 255, 0.24), transparent 28%),
+    radial-gradient(circle at 82% 24%, rgba(124, 60, 255, 0.22), transparent 30%);
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent 82%);
+}
+
+.hero-orb {
+  position: absolute;
+  z-index: 2;
+  width: 300px;
+  height: 300px;
+  border-radius: 999px;
+  filter: blur(18px);
+  opacity: 0.22;
+}
+
+.hero-orb-one {
+  right: 9%;
+  top: 18%;
+  background: var(--humach-blue);
+}
+
+.hero-orb-two {
+  right: 20%;
+  bottom: 12%;
+  background: var(--humach-violet);
+}
+
+.humach-hero h2 {
+  font-family: var(--heading-font);
+  font-size: clamp(52px, 8vw, 92px);
+  line-height: 0.93;
+  font-weight: 800;
+  max-width: 900px;
+  letter-spacing: -0.07em;
+}
+
+.brand-full-name {
+  color: #ffffff;
+  font-size: clamp(22px, 3vw, 34px);
+  line-height: 1.2;
+  font-weight: 700;
+  max-width: 980px;
+  margin: 22px 0 0;
+}
+
+.humach-hero .hero-lead {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 770px;
+  margin-top: 22px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.identity-card {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+  border-radius: 28px;
+  padding: 28px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+}
+
+.acronym-list {
+  display: grid;
+  gap: 12px;
+}
+
+.acronym-list div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.acronym-list strong {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-family: var(--heading-font);
+  font-size: 21px;
+}
+
+.acronym-list span {
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 700;
+}
+
+/* Identity */
+.humach-identity {
+  background: #ffffff;
+}
+
+.humach-identity .content h3 {
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.05;
+}
+
+.humach-identity .content .fst-italic {
+  color: #516177;
+  font-style: normal !important;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.humach-identity .content ul li {
+  gap: 10px;
+  color: #53647a;
+}
+
+.humach-identity .content ul i {
+  color: var(--humach-blue);
+  margin-right: 0;
+  margin-top: 2px;
+}
+
+.brand-image-panel {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: var(--humach-card-shadow);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+}
+
+.brand-image-panel:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(25, 211, 255, 0.18), rgba(124, 60, 255, 0.12));
+  pointer-events: none;
+}
+
+/* Pillars */
+.humach-pillars {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(25, 211, 255, 0.10), transparent 30%),
+    #eef7ff;
+}
+
+.pillar-card {
+  height: 100%;
+  padding: 30px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: var(--humach-card-shadow);
+  transition: 0.25s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(25, 211, 255, 0.42);
+}
+
+.pillar-card i {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+
+.pillar-card h3 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.pillar-card p {
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Services */
+.humach-services {
+  background: #ffffff;
+}
+
+.humach-services .service-item {
+  text-align: left;
+  padding: 34px;
+  border-radius: 28px;
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  background:
+    linear-gradient(180deg, #ffffff, #f8fbff);
+  box-shadow: 0 18px 46px rgba(7, 20, 38, 0.07);
+}
+
+.humach-services .service-item .icon {
+  margin: 0 0 22px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(25, 211, 255, 0.16), rgba(124, 60, 255, 0.12));
+  color: var(--humach-blue);
+}
+
+.humach-services .service-item h3 {
+  color: var(--humach-navy);
+}
+
+.humach-services .service-item p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.humach-services .service-item:hover {
+  box-shadow: 0 26px 70px rgba(7, 20, 38, 0.12);
+  border-color: rgba(25, 211, 255, 0.38);
+}
+
+/* CTA */
+.humach-cta {
+  position: relative;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(25, 211, 255, 0.22), transparent 26%),
+    radial-gradient(circle at 85% 50%, rgba(124, 60, 255, 0.24), transparent 32%),
+    #030817;
+  overflow: hidden;
+}
+
+.humach-cta:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.5;
+}
+
+.humach-cta .container {
+  position: relative;
+  z-index: 1;
+}
+
+.humach-cta h3 {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.05;
+}
+
+.humach-cta p {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 760px;
+}
+
+/* Footer */
+.humach-footer {
+  background: #020615;
+}
+
+.humach-footer .footer-top {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    #020615;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.humach-footer .footer-about .logo img {
+  max-height: 44px;
+  border-radius: 14px;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.humach-footer .footer-about .logo span {
+  color: #ffffff;
+  letter-spacing: -0.03em;
+}
+
+.humach-footer .footer-about p,
+.humach-footer .footer-links ul a,
+.humach-footer .footer-links ul li {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.humach-footer h4 {
+  color: #ffffff;
+}
+
+.humach-footer .footer-links ul i,
+.humach-footer .footer-links ul a:hover {
+  color: var(--humach-blue);
+}
+
+.humach-footer .copyright {
+  padding: 22px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.humach-footer .credits {
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.humach-footer .credits a {
+  color: rgba(25, 211, 255, 0.86);
+}
+
+.scroll-top {
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  color: #061221;
+}
+
+.scroll-top:hover {
+  color: #061221;
+  box-shadow: 0 16px 34px rgba(25, 211, 255, 0.26);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .humach-hero {
+    padding: 140px 0 80px;
+  }
+
+  .identity-card {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 767px) {
+  .humach-hero h2 {
+    font-size: 50px;
+  }
+
+  .brand-full-name {
+    font-size: 24px;
+  }
+
+  .humach-hero .hero-lead {
+    font-size: 16px;
+  }
+
+  .btn-humach {
+    width: 100%;
+  }
+
+  .pillar-card,
+  .humach-services .service-item,
+  .identity-card {
+    border-radius: 22px;
+    padding: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# HUMACH Research Homepage Redesign
+# Step 2: Complete landing-page structure
+--------------------------------------------------------------*/
+.humach-step2 .humach-hero,
+.humach-step3 .humach-hero {
+  padding: 162px 0 120px;
+}
+
+.humach-step2 .humach-hero h2,
+.humach-step3 .humach-hero h2 {
+  font-size: clamp(48px, 7vw, 86px);
+}
+
+.humach-step2 .brand-full-name,
+.humach-step3 .brand-full-name {
+  max-width: 900px;
+}
+
+.btn-humach i {
+  font-size: 18px;
+}
+
+.btn-humach-ghost {
+  color: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(25, 211, 255, 0.22);
+}
+
+.btn-humach-ghost:hover {
+  color: #ffffff;
+  border-color: rgba(0, 255, 168, 0.58);
+  background: rgba(0, 255, 168, 0.10);
+  transform: translateY(-2px);
+}
+
+.hero-network-card {
+  position: absolute;
+  z-index: 2;
+  right: 8%;
+  top: 22%;
+  width: 360px;
+  height: 360px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    radial-gradient(circle at 30% 30%, rgba(25, 211, 255, 0.16), transparent 38%),
+    radial-gradient(circle at 70% 75%, rgba(124, 60, 255, 0.15), transparent 40%);
+  opacity: 0.42;
+  transform: rotate(8deg);
+  pointer-events: none;
+}
+
+.hero-network-card span {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: var(--humach-blue);
+  box-shadow: 0 0 28px rgba(25, 211, 255, 0.95);
+}
+
+.hero-network-card span:nth-child(1) { left: 66px; top: 76px; }
+.hero-network-card span:nth-child(2) { right: 72px; top: 102px; background: var(--humach-green); }
+.hero-network-card span:nth-child(3) { left: 116px; bottom: 80px; background: var(--humach-violet); }
+.hero-network-card span:nth-child(4) { right: 96px; bottom: 112px; }
+.hero-network-card span:nth-child(5) { left: 174px; top: 174px; background: #ffffff; }
+
+.hero-dashboard-card {
+  position: relative;
+  z-index: 4;
+  padding: 30px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.055));
+  backdrop-filter: blur(22px);
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.36);
+}
+
+.dashboard-topline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+
+.pulse-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--humach-green);
+  box-shadow: 0 0 0 8px rgba(0, 255, 168, 0.10), 0 0 24px rgba(0, 255, 168, 0.70);
+}
+
+.dashboard-title {
+  color: #ffffff;
+  font-family: var(--heading-font);
+  font-size: 30px;
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.pipeline-list {
+  display: grid;
+  gap: 12px;
+}
+
+.pipeline-list div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pipeline-list strong {
+  color: var(--humach-blue);
+  font-family: var(--heading-font);
+  font-weight: 900;
+}
+
+.pipeline-list span {
+  color: rgba(255, 255, 255, 0.84);
+  font-weight: 700;
+}
+
+/* Snapshot */
+.humach-snapshot {
+  position: relative;
+  z-index: 3;
+  padding: 0 0 42px;
+  margin-top: -52px;
+  background: transparent;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.snapshot-card {
+  min-height: 188px;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 24px 70px rgba(7, 20, 38, 0.12);
+}
+
+.snapshot-card span {
+  display: inline-flex;
+  color: var(--humach-blue);
+  font-family: var(--heading-font);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  margin-bottom: 18px;
+}
+
+.snapshot-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.snapshot-card p {
+  color: #62748d;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* About */
+.humach-step2 .humach-identity {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(25, 211, 255, 0.10), transparent 30%),
+    #eef7ff;
+}
+
+.humach-step2 .humach-identity .content p:not(.fst-italic) {
+  color: #53647a;
+  font-size: 17px;
+  line-height: 1.82;
+}
+
+.humach-about-panel {
+  overflow: visible;
+}
+
+.humach-about-panel img {
+  border-radius: 30px;
+}
+
+.about-floating-badge {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  max-width: 250px;
+  padding: 20px;
+  border-radius: 24px;
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(7, 20, 38, 0.94), rgba(3, 8, 23, 0.88));
+  border: 1px solid rgba(25, 211, 255, 0.28);
+  box-shadow: 0 24px 60px rgba(7, 20, 38, 0.22);
+}
+
+.about-floating-badge strong {
+  display: block;
+  font-family: var(--heading-font);
+  font-size: 20px;
+  letter-spacing: -0.03em;
+}
+
+.about-floating-badge span {
+  display: block;
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 13px;
+  line-height: 1.55;
+  margin-top: 4px;
+}
+
+.acronym-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.acronym-strip div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+}
+
+.acronym-strip strong {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-family: var(--heading-font);
+  font-weight: 900;
+}
+
+.acronym-strip span {
+  font-weight: 800;
+  color: var(--humach-navy);
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+/* Research */
+.humach-research {
+  background:
+    linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+.research-card {
+  height: 100%;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.tag-row span {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: #075061;
+  background: rgba(25, 211, 255, 0.12);
+  border: 1px solid rgba(25, 211, 255, 0.22);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* Development */
+.humach-development {
+  background:
+    radial-gradient(circle at 90% 10%, rgba(124, 60, 255, 0.10), transparent 34%),
+    #eef7ff;
+}
+
+.development-feature-card {
+  height: 100%;
+  padding: 36px;
+  border-radius: 32px;
+  background: #071426;
+  color: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(25, 211, 255, 0.20);
+  box-shadow: 0 26px 70px rgba(7, 20, 38, 0.18);
+}
+
+.development-feature-card h3 {
+  color: #ffffff;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.05;
+}
+
+.development-feature-card p {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.8;
+  margin: 18px 0 28px;
+}
+
+.development-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.development-grid div {
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 42px rgba(7, 20, 38, 0.07);
+}
+
+.development-grid i {
+  width: 54px;
+  height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.development-grid h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.development-grid p {
+  color: #64748b;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Projects */
+.humach-projects {
+  background: #ffffff;
+}
+
+.project-card {
+  height: 100%;
+  padding: 32px;
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 20px 48px rgba(7, 20, 38, 0.08);
+  transition: 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(25, 211, 255, 0.40);
+  box-shadow: 0 28px 80px rgba(7, 20, 38, 0.13);
+}
+
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 22px;
+}
+
+.project-status.active {
+  color: #075061;
+  background: rgba(25, 211, 255, 0.14);
+}
+
+.project-status.recruiting {
+  color: #065f46;
+  background: rgba(0, 255, 168, 0.14);
+}
+
+.project-status.concept {
+  color: #4c1d95;
+  background: rgba(124, 60, 255, 0.13);
+}
+
+.project-card h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.project-meta span {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(7, 20, 38, 0.06);
+  color: #475569;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* Opportunities */
+.humach-opportunities {
+  position: relative;
+  background:
+    radial-gradient(circle at 20% 5%, rgba(25, 211, 255, 0.20), transparent 32%),
+    radial-gradient(circle at 82% 28%, rgba(124, 60, 255, 0.18), transparent 34%),
+    #030817;
+  overflow: hidden;
+}
+
+.humach-opportunities:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 66px 66px;
+  opacity: 0.5;
+}
+
+.humach-opportunities .container {
+  position: relative;
+  z-index: 1;
+}
+
+.humach-opportunities .section-title p {
+  color: #ffffff;
+}
+
+.opportunity-card {
+  height: 100%;
+  padding: 32px;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.76);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.opportunity-card.highlighted {
+  background: linear-gradient(180deg, rgba(25, 211, 255, 0.15), rgba(255, 255, 255, 0.07));
+  border-color: rgba(25, 211, 255, 0.34);
+}
+
+.opportunity-card i {
+  width: 58px;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+
+.opportunity-card h3 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.opportunity-card p,
+.opportunity-card li {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.65;
+}
+
+.opportunity-card ul {
+  padding-left: 18px;
+  margin: 18px 0 0;
+}
+
+/* Publications */
+.humach-publications {
+  background:
+    radial-gradient(circle at 6% 5%, rgba(25, 211, 255, 0.10), transparent 28%),
+    #eef7ff;
+}
+
+.publication-list {
+  display: grid;
+  gap: 16px;
+}
+
+.publication-item {
+  display: grid;
+  grid-template-columns: 92px 1fr auto;
+  align-items: center;
+  gap: 22px;
+  padding: 24px;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 42px rgba(7, 20, 38, 0.07);
+}
+
+.pub-year {
+  width: 78px;
+  height: 78px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-family: var(--heading-font);
+  font-weight: 900;
+}
+
+.publication-item h3 {
+  font-size: 21px;
+  margin: 0 0 6px;
+}
+
+.publication-item p {
+  color: #64748b;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.pub-type {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: #075061;
+  background: rgba(25, 211, 255, 0.12);
+  font-weight: 900;
+  font-size: 12px;
+}
+
+/* Team */
+.humach-team-preview {
+  background: #ffffff;
+}
+
+.team-preview-card {
+  height: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 20px 48px rgba(7, 20, 38, 0.08);
+  text-align: center;
+}
+
+.team-preview-card img {
+  width: 126px;
+  height: 126px;
+  object-fit: cover;
+  border-radius: 32px;
+  margin-bottom: 22px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 18px 34px rgba(7, 20, 38, 0.14);
+}
+
+.team-preview-card h3 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.team-preview-card p {
+  color: #64748b;
+  line-height: 1.68;
+  margin: 0;
+}
+
+.empty-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.empty-profile i {
+  width: 126px;
+  height: 126px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 48px;
+  margin: 0 auto 22px;
+}
+
+/* Step 2 responsive refinements */
+@media (min-width: 1200px) {
+  .humach-step2 .navmenu a,
+  .humach-step3 .navmenu a,
+  .humach-step2 .navmenu a:focus,
+  .humach-step3 .navmenu a:focus {
+    font-size: 13px;
+    padding: 18px 8px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hero-network-card {
+    display: none;
+  }
+
+  .snapshot-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .humach-step2 .humach-hero,
+.humach-step3 .humach-hero {
+    padding: 138px 0 96px;
+  }
+
+  .hero-dashboard-card {
+    max-width: 620px;
+  }
+
+  .about-floating-badge {
+    right: 20px;
+  }
+
+  .development-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .snapshot-grid,
+  .acronym-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .humach-snapshot {
+    margin-top: -34px;
+  }
+
+  .publication-item {
+    grid-template-columns: 1fr;
+  }
+
+  .pub-year {
+    width: auto;
+    height: auto;
+    padding: 12px 16px;
+    justify-content: flex-start;
+  }
+
+  .about-floating-badge {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: -34px 18px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .humach-step2 .humach-hero h2,
+.humach-step3 .humach-hero h2 {
+    font-size: 44px;
+  }
+
+  .hero-dashboard-card,
+  .snapshot-card,
+  .development-feature-card,
+  .development-grid div,
+  .project-card,
+  .opportunity-card,
+  .publication-item,
+  .team-preview-card {
+    border-radius: 24px;
+    padding: 24px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Step 3: Global Navigation and Layout System
+--------------------------------------------------------------*/
+.skip-link {
+  position: fixed;
+  left: 18px;
+  top: 12px;
+  z-index: 99999;
+  transform: translateY(-140%);
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-weight: 900;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+  transition: 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.humach-global-header {
+  min-height: 76px;
+}
+
+.index-page .humach-global-header {
+  --background-color: rgba(3, 8, 23, 0.30);
+}
+
+.humach-inner-page .humach-global-header {
+  --background-color: rgba(3, 8, 23, 0.94);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+}
+
+@media (min-width: 1200px) {
+  .humach-global-header .navmenu a,
+  .humach-global-header .navmenu a:focus {
+    padding: 18px 10px;
+    white-space: nowrap;
+  }
+
+  .humach-global-header .navmenu .dropdown ul {
+    min-width: 240px;
+    border-radius: 20px;
+    padding: 12px;
+    background: rgba(7, 20, 38, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0 28px 72px rgba(0, 0, 0, 0.34);
+  }
+
+  .humach-global-header .navmenu .dropdown ul a {
+    padding: 12px 14px;
+    border-radius: 14px;
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .humach-global-header .navmenu .dropdown ul a:hover,
+  .humach-global-header .navmenu .dropdown ul a.active {
+    color: #ffffff;
+    background: rgba(25, 211, 255, 0.14);
+  }
+}
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .header .humach-logo h1 {
+    font-size: 19px;
+  }
+
+  .humach-logo small {
+    max-width: 190px;
+    font-size: 10px;
+  }
+
+  .humach-global-header .navmenu a,
+  .humach-global-header .navmenu a:focus {
+    font-size: 12px;
+    padding: 18px 7px;
+  }
+
+  .header .humach-nav-cta,
+  .header .humach-nav-cta:focus {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+.humach-page-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0 72px;
+  background:
+    radial-gradient(circle at 8% 8%, rgba(25, 211, 255, 0.22), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(124, 60, 255, 0.22), transparent 30%),
+    linear-gradient(135deg, #030817 0%, #071426 56%, #061221 100%);
+}
+
+.humach-page-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.humach-page-hero h1 {
+  color: #ffffff;
+  font-size: clamp(40px, 6vw, 78px);
+  line-height: 0.96;
+  margin-bottom: 20px;
+}
+
+.humach-page-hero p {
+  max-width: 900px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+.humach-breadcrumb {
+  margin-bottom: 28px;
+}
+
+.humach-breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.humach-breadcrumb li,
+.humach-breadcrumb a {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.humach-breadcrumb a:hover {
+  color: var(--humach-blue);
+}
+
+.humach-breadcrumb li:not(:last-child)::after {
+  content: "/";
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.34);
+}
+
+.humach-page-summary-card,
+.humach-side-panel,
+.humach-content-card,
+.humach-system-card {
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 22px 54px rgba(7, 20, 38, 0.08);
+}
+
+.humach-page-summary-card {
+  padding: 26px;
+  border-radius: 26px;
+  color: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(18px);
+}
+
+.humach-page-summary-card span {
+  display: block;
+  color: var(--humach-blue);
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.humach-page-summary-card strong {
+  display: block;
+  color: #ffffff;
+  font-family: var(--heading-font);
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.humach-layout-demo,
+.humach-detail-layout {
+  background:
+    radial-gradient(circle at 8% 0%, rgba(25, 211, 255, 0.09), transparent 26%),
+    #f7fbff;
+}
+
+.humach-side-panel {
+  top: 110px;
+  padding: 30px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+
+.humach-side-panel h3 {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.humach-side-panel ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+
+.humach-side-panel li {
+  margin-bottom: 12px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.humach-component-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.humach-system-card,
+.humach-content-card {
+  padding: 30px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+
+.humach-system-card i {
+  width: 58px;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.humach-system-card h3,
+.humach-content-card h2 {
+  margin-bottom: 12px;
+}
+
+.humach-system-card p,
+.humach-content-card p {
+  color: #64748b;
+  line-height: 1.72;
+  margin-bottom: 0;
+}
+
+.humach-content-card + .humach-content-card {
+  margin-top: 20px;
+}
+
+.humach-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.humach-chip-row span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: #075061;
+  background: rgba(25, 211, 255, 0.12);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.humach-mini-cta {
+  padding: 72px 0;
+  background:
+    radial-gradient(circle at 18% 15%, rgba(25, 211, 255, 0.18), transparent 30%),
+    radial-gradient(circle at 88% 5%, rgba(124, 60, 255, 0.20), transparent 28%),
+    #030817;
+}
+
+.humach-mini-cta h2 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  margin-bottom: 10px;
+}
+
+.humach-mini-cta p {
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.humach-footer .footer-links a:hover {
+  color: var(--humach-blue);
+}
+
+@media (max-width: 991px) {
+  .humach-component-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .humach-page-hero {
+    padding: 132px 0 62px;
+  }
+}
+
+@media (max-width: 575px) {
+  .humach-page-summary-card,
+  .humach-side-panel,
+  .humach-content-card,
+  .humach-system-card {
+    border-radius: 24px;
+    padding: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# HUMACH Step 4: Data-driven structure helpers
+--------------------------------------------------------------*/
+.humach-data-status-strip {
+  background: #061221;
+  color: rgba(255, 255, 255, 0.74);
+  padding: 12px 0;
+  border-top: 1px solid rgba(25, 211, 255, 0.14);
+  border-bottom: 1px solid rgba(25, 211, 255, 0.14);
+}
+
+.humach-data-status-strip p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.humach-data-status-strip [data-humach-data-status]::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 9px;
+  border-radius: 50%;
+  background: var(--humach-green);
+  box-shadow: 0 0 16px rgba(0, 255, 168, 0.55);
+}
+
+.humach-data-status-strip [data-humach-data-status].is-error::before {
+  background: #ffcf66;
+  box-shadow: 0 0 16px rgba(255, 207, 102, 0.55);
+}
+
+.news-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.news-mini-card {
+  background: #ffffff;
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  border-radius: 24px;
+  padding: 26px;
+  min-height: 100%;
+  box-shadow: var(--humach-card-shadow);
+  transition: 0.25s ease;
+}
+
+.news-mini-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(25, 211, 255, 0.28);
+}
+
+.news-mini-card span {
+  display: inline-flex;
+  color: #061221;
+  background: rgba(25, 211, 255, 0.13);
+  border: 1px solid rgba(25, 211, 255, 0.22);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.news-mini-card h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.news-mini-card p {
+  margin-bottom: 16px;
+}
+
+.news-mini-card time {
+  color: var(--humach-muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+[data-content-id] {
+  scroll-margin-top: 110px;
+}
+
+@media (max-width: 991px) {
+  .news-mini-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Step 5: Dedicated Research Page
+--------------------------------------------------------------*/
+.humach-step5 .humach-research-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.humach-research-hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 14% 28%, rgba(25, 211, 255, 0.22), transparent 30%),
+    radial-gradient(circle at 86% 30%, rgba(124, 60, 255, 0.25), transparent 34%),
+    linear-gradient(130deg, rgba(3, 8, 23, 0.96), rgba(7, 20, 38, 0.9));
+  z-index: 0;
+}
+
+.humach-research-hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.humach-research-hero .hero-actions {
+  margin-top: 26px;
+}
+
+.research-summary-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.research-summary-metrics div {
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.research-summary-metrics b {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.research-summary-metrics small {
+  color: rgba(255, 255, 255, 0.62);
+  font-weight: 700;
+}
+
+.humach-research-intro h2 {
+  font-size: clamp(32px, 4vw, 50px);
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+.humach-research-intro p {
+  color: #5c6b7e;
+  line-height: 1.85;
+  font-size: 17px;
+}
+
+.research-principle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.research-principle-grid article {
+  height: 100%;
+  padding: 22px;
+  border-radius: 24px;
+  background: #fff;
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 44px rgba(7, 20, 38, 0.07);
+}
+
+.research-principle-grid i,
+.research-detail-icon {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 23px;
+  margin-bottom: 16px;
+}
+
+.research-principle-grid h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.research-principle-grid p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.humach-research-directory {
+  background: #ffffff;
+}
+
+.research-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 20px;
+  margin-bottom: 28px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(25, 211, 255, 0.10), rgba(124, 60, 255, 0.08));
+  border: 1px solid rgba(7, 20, 38, 0.08);
+}
+
+.research-toolbar span {
+  display: block;
+  color: var(--humach-blue);
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.research-toolbar strong {
+  color: var(--humach-navy);
+  font-size: 16px;
+}
+
+.research-toolbar code,
+.humach-page-summary-card code {
+  color: var(--humach-blue);
+  background: rgba(25, 211, 255, 0.10);
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.btn-humach.dark-text {
+  color: var(--humach-navy);
+  border-color: rgba(7, 20, 38, 0.12);
+  background: rgba(255, 255, 255, 0.70);
+}
+
+.btn-humach.dark-text:hover {
+  color: var(--humach-navy);
+  background: #fff;
+}
+
+.research-detail-card {
+  position: relative;
+  height: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 50px rgba(7, 20, 38, 0.08);
+  transition: 0.25s ease;
+  overflow: hidden;
+}
+
+.research-detail-card:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--humach-blue), var(--humach-violet), var(--humach-green));
+}
+
+.research-detail-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(25, 211, 255, 0.34);
+  box-shadow: 0 26px 74px rgba(7, 20, 38, 0.13);
+}
+
+.research-status {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  color: #063020;
+  background: rgba(0, 255, 168, 0.18);
+  border: 1px solid rgba(0, 255, 168, 0.28);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.research-status.emerging {
+  color: #291559;
+  background: rgba(124, 60, 255, 0.14);
+  border-color: rgba(124, 60, 255, 0.24);
+}
+
+.research-detail-card h3 {
+  font-size: 23px;
+  margin-bottom: 12px;
+  padding-right: 56px;
+}
+
+.research-detail-card p {
+  color: #64748b;
+  line-height: 1.75;
+  min-height: 82px;
+}
+
+.research-detail-card ul {
+  margin: 18px 0 0;
+  padding-left: 18px;
+  color: #516177;
+  line-height: 1.8;
+}
+
+.humach-topic-map {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(25, 211, 255, 0.10), transparent 28%),
+    #eef7ff;
+}
+
+.topic-map-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.topic-map-grid article {
+  padding: 24px;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 16px 42px rgba(7, 20, 38, 0.06);
+}
+
+.topic-map-grid h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.topic-map-grid h4 i {
+  color: var(--humach-blue);
+}
+
+.topic-tags span {
+  background: rgba(25, 211, 255, 0.10);
+}
+
+.humach-research-pathway {
+  background: #ffffff;
+}
+
+.research-pathway-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.research-pathway-grid article {
+  position: relative;
+  padding: 28px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #fff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 46px rgba(7, 20, 38, 0.07);
+}
+
+.research-pathway-grid strong {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  margin-bottom: 18px;
+}
+
+.research-pathway-grid h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.research-pathway-grid p {
+  color: #64748b;
+  line-height: 1.75;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .research-pathway-grid,
+  .research-principle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .research-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .research-pathway-grid,
+  .research-principle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-summary-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .research-detail-card h3 {
+    padding-right: 0;
+  }
+
+  .research-status {
+    position: static;
+    margin-bottom: 14px;
+  }
+}
+
+
+/* Step 6: Projects page */
+.humach-projects-page .humach-page-hero {
+  min-height: 78vh;
+}
+
+.humach-projects-hero {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(25, 211, 255, 0.22), transparent 28%),
+    radial-gradient(circle at 84% 8%, rgba(124, 60, 255, 0.20), transparent 24%),
+    linear-gradient(135deg, #061221 0%, #071426 48%, #0b1f3a 100%);
+}
+
+.humach-project-intro {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(25, 211, 255, 0.10), transparent 28%),
+    #eef7ff;
+}
+
+.project-principle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.project-principle-grid article {
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 16px 42px rgba(7, 20, 38, 0.06);
+}
+
+.project-principle-grid i {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.project-principle-grid h3 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.project-principle-grid p {
+  color: #64748b;
+  line-height: 1.65;
+  margin: 0;
+  font-size: 14px;
+}
+
+.humach-project-directory {
+  background: #ffffff;
+}
+
+.project-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.project-filter-bar button {
+  appearance: none;
+  border: 1px solid rgba(7, 20, 38, 0.10);
+  background: #ffffff;
+  color: #475569;
+  border-radius: 999px;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 900;
+  transition: 0.2s ease;
+}
+
+.project-filter-bar button:hover,
+.project-filter-bar button.active {
+  color: #061221;
+  border-color: rgba(25, 211, 255, 0.40);
+  background: linear-gradient(135deg, rgba(25, 211, 255, 0.18), rgba(0, 255, 168, 0.14));
+  transform: translateY(-1px);
+}
+
+.project-grid-item {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.project-grid-item.is-hidden {
+  display: none;
+}
+
+.project-detail-card {
+  position: relative;
+  height: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 50px rgba(7, 20, 38, 0.08);
+  transition: 0.25s ease;
+  overflow: hidden;
+}
+
+.project-detail-card:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--humach-green), var(--humach-blue), var(--humach-violet));
+}
+
+.project-detail-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(25, 211, 255, 0.34);
+  box-shadow: 0 26px 74px rgba(7, 20, 38, 0.13);
+}
+
+.project-detail-card .project-status {
+  margin-bottom: 16px;
+}
+
+.project-status.planned {
+  color: #92400e;
+  background: rgba(251, 191, 36, 0.18);
+}
+
+.project-status.emerging {
+  color: #075985;
+  background: rgba(14, 165, 233, 0.14);
+}
+
+.project-type-line {
+  color: var(--humach-blue);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  margin-bottom: 12px;
+}
+
+.project-detail-card h3 {
+  font-size: 23px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.project-detail-card p {
+  color: #64748b;
+  line-height: 1.72;
+}
+
+.project-related {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(7, 20, 38, 0.08);
+}
+
+.project-related span,
+.project-card-footer span {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.project-related p {
+  margin: 0;
+  color: #334155;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.project-output-list {
+  margin: 16px 0 0;
+  padding-left: 18px;
+  color: #516177;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.project-card-footer {
+  margin-top: 22px;
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(25, 211, 255, 0.08);
+  border: 1px solid rgba(25, 211, 255, 0.12);
+}
+
+.project-card-footer strong {
+  color: var(--humach-navy);
+  font-size: 14px;
+}
+
+.humach-project-pathway {
+  background:
+    radial-gradient(circle at 85% 10%, rgba(124, 60, 255, 0.10), transparent 26%),
+    #eef7ff;
+}
+
+.humach-project-cta {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(25, 211, 255, 0.20), transparent 28%),
+    radial-gradient(circle at 85% 12%, rgba(0, 255, 168, 0.14), transparent 24%),
+    #061221;
+}
+
+.humach-project-cta .humach-cta-panel {
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .project-principle-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .project-filter-bar button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-detail-card {
+    padding: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Step 7: Development Page
+--------------------------------------------------------------*/
+.humach-development-hero {
+  background:
+    radial-gradient(circle at 12% 15%, rgba(0, 255, 168, 0.18), transparent 28%),
+    radial-gradient(circle at 88% 20%, rgba(25, 211, 255, 0.20), transparent 30%),
+    linear-gradient(135deg, #061221 0%, #0a1f36 52%, #111827 100%);
+}
+
+.humach-development-hero .hero-orb-two {
+  right: 8%;
+  bottom: 16%;
+  background: rgba(0, 255, 168, 0.18);
+}
+
+.humach-development-intro {
+  background:
+    radial-gradient(circle at 8% 0%, rgba(25, 211, 255, 0.10), transparent 26%),
+    #eef7ff;
+}
+
+.development-principle-grid i {
+  background: linear-gradient(135deg, var(--humach-green), var(--humach-blue));
+}
+
+.humach-development-directory {
+  background: #ffffff;
+}
+
+.development-detail-card {
+  position: relative;
+  height: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffffff, #f7fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 50px rgba(7, 20, 38, 0.08);
+  transition: 0.25s ease;
+  overflow: hidden;
+}
+
+.development-detail-card:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--humach-blue), var(--humach-green), var(--humach-violet));
+}
+
+.development-detail-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 255, 168, 0.30);
+  box-shadow: 0 28px 76px rgba(7, 20, 38, 0.13);
+}
+
+.development-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 26px;
+  box-shadow: 0 16px 34px rgba(25, 211, 255, 0.22);
+}
+
+.development-detail-card h3 {
+  font-size: 23px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.development-detail-card p {
+  color: #64748b;
+  line-height: 1.72;
+}
+
+.development-detail-copy {
+  margin-top: 18px;
+  color: #42526a;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.development-tool-list {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(7, 20, 38, 0.08);
+}
+
+.development-tool-list span {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.development-tool-list p {
+  margin: 0;
+  color: #334155;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.development-grid-item {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.development-grid-item.is-hidden {
+  display: none;
+}
+
+.humach-development-stack {
+  background:
+    radial-gradient(circle at 78% 12%, rgba(124, 60, 255, 0.10), transparent 28%),
+    #eef7ff;
+}
+
+.development-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.development-stack-grid article {
+  padding: 26px;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 46px rgba(7, 20, 38, 0.07);
+}
+
+.development-stack-grid h3 {
+  font-size: 19px;
+  margin-bottom: 14px;
+}
+
+.development-stack-grid ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #526179;
+  line-height: 1.85;
+  font-size: 14px;
+}
+
+.humach-development-pathway {
+  background: #ffffff;
+}
+
+.humach-development-cta {
+  background:
+    radial-gradient(circle at 16% 20%, rgba(0, 255, 168, 0.16), transparent 28%),
+    radial-gradient(circle at 85% 12%, rgba(25, 211, 255, 0.20), transparent 24%),
+    #061221;
+}
+
+@media (max-width: 1199px) {
+  .development-stack-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .development-stack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .development-detail-card {
+    padding: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Step 8: Opportunities / Internships Page
+--------------------------------------------------------------*/
+.humach-opportunity-hero {
+  background:
+    radial-gradient(circle at 14% 14%, rgba(25, 211, 255, 0.22), transparent 30%),
+    radial-gradient(circle at 86% 18%, rgba(124, 60, 255, 0.22), transparent 32%),
+    radial-gradient(circle at 55% 88%, rgba(0, 255, 168, 0.12), transparent 28%),
+    linear-gradient(135deg, #030817 0%, #071426 52%, #111827 100%);
+}
+
+.humach-opportunity-hero .hero-orb-two {
+  right: 10%;
+  bottom: 14%;
+  background: rgba(124, 60, 255, 0.18);
+}
+
+.humach-opportunity-intro {
+  background:
+    radial-gradient(circle at 8% 0%, rgba(124, 60, 255, 0.10), transparent 26%),
+    #eef7ff;
+}
+
+.opportunity-principle-grid i {
+  background: linear-gradient(135deg, var(--humach-violet), var(--humach-blue));
+}
+
+.humach-opportunity-directory {
+  background: #ffffff;
+}
+
+.opportunity-filter-bar button.active,
+.opportunity-filter-bar button:hover {
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-violet));
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.opportunity-grid-item {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.opportunity-grid-item.is-hidden {
+  display: none;
+}
+
+.opportunity-detail-card {
+  position: relative;
+  height: 100%;
+  padding: 32px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 50px rgba(7, 20, 38, 0.08);
+  transition: 0.25s ease;
+  overflow: hidden;
+}
+
+.opportunity-detail-card:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--humach-violet), var(--humach-blue), var(--humach-green));
+}
+
+.opportunity-detail-card.highlighted {
+  border-color: rgba(25, 211, 255, 0.22);
+  box-shadow: 0 22px 64px rgba(25, 211, 255, 0.13);
+}
+
+.opportunity-detail-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(124, 60, 255, 0.28);
+  box-shadow: 0 28px 76px rgba(7, 20, 38, 0.13);
+}
+
+.opportunity-detail-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.opportunity-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 28px;
+  box-shadow: 0 16px 34px rgba(25, 211, 255, 0.22);
+}
+
+.opportunity-detail-card h3 {
+  font-size: 25px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.opportunity-detail-card p {
+  color: #64748b;
+  line-height: 1.72;
+}
+
+.opportunity-detail-copy {
+  margin-top: 18px;
+  color: #42526a;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.opportunity-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.opportunity-info-grid div {
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(7, 20, 38, 0.04);
+  border: 1px solid rgba(7, 20, 38, 0.06);
+}
+
+.opportunity-info-grid span,
+.opportunity-outcome-list span {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.opportunity-info-grid strong {
+  color: var(--humach-navy);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.opportunity-outcome-list {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(7, 20, 38, 0.08);
+}
+
+.opportunity-outcome-list p {
+  margin: 0;
+  color: #334155;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.project-status.open {
+  color: #03543f;
+  background: rgba(0, 255, 168, 0.16);
+}
+
+.project-status.matching {
+  color: #4c1d95;
+  background: rgba(124, 60, 255, 0.14);
+}
+
+.project-status.selective {
+  color: #92400e;
+  background: rgba(245, 158, 11, 0.16);
+}
+
+.humach-opportunity-process {
+  background:
+    radial-gradient(circle at 85% 12%, rgba(25, 211, 255, 0.12), transparent 28%),
+    #eef7ff;
+}
+
+.opportunity-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.opportunity-process-grid article {
+  position: relative;
+  min-height: 100%;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 46px rgba(7, 20, 38, 0.07);
+}
+
+.opportunity-process-grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-family: var(--heading-font);
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.opportunity-process-grid i {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  color: rgba(7, 20, 38, 0.20);
+  font-size: 28px;
+}
+
+.opportunity-process-grid h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.opportunity-process-grid p {
+  margin: 0;
+  color: #526179;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.humach-opportunity-skills {
+  background: #ffffff;
+}
+
+.opportunity-skill-grid article {
+  background: linear-gradient(180deg, #ffffff, #f7fbff);
+}
+
+.humach-opportunity-cta {
+  background:
+    radial-gradient(circle at 16% 20%, rgba(124, 60, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 85% 12%, rgba(25, 211, 255, 0.20), transparent 24%),
+    #061221;
+}
+
+@media (max-width: 1199px) {
+  .opportunity-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .opportunity-process-grid,
+  .opportunity-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .opportunity-detail-card {
+    padding: 24px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Step 9: Team Page
+--------------------------------------------------------------*/
+.humach-team-hero {
+  background:
+    radial-gradient(circle at 16% 18%, rgba(25, 211, 255, 0.22), transparent 30%),
+    radial-gradient(circle at 84% 18%, rgba(124, 60, 255, 0.20), transparent 30%),
+    radial-gradient(circle at 52% 88%, rgba(0, 255, 168, 0.12), transparent 28%),
+    linear-gradient(135deg, #030817 0%, #081527 48%, #101729 100%);
+}
+
+.humach-team-hero .hero-orb-two {
+  right: 8%;
+  bottom: 16%;
+  background: rgba(0, 255, 168, 0.13);
+}
+
+.humach-team-intro {
+  background:
+    radial-gradient(circle at 8% 0%, rgba(25, 211, 255, 0.12), transparent 26%),
+    #eef7ff;
+}
+
+.team-principle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.team-principle-grid article {
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 16px 42px rgba(7, 20, 38, 0.07);
+}
+
+.team-principle-grid i,
+.team-group-grid i {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.team-principle-grid h3,
+.team-group-grid h3 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.team-principle-grid p,
+.team-group-grid p {
+  margin: 0;
+  color: #526179;
+  line-height: 1.65;
+  font-size: 14px;
+}
+
+.humach-team-directory {
+  background: #ffffff;
+}
+
+.team-filter-bar button.active,
+.team-filter-bar button:hover {
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-violet));
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.team-grid-item {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.team-grid-item.is-hidden {
+  display: none;
+}
+
+.team-detail-card {
+  position: relative;
+  height: 100%;
+  padding: 32px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 50px rgba(7, 20, 38, 0.08);
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+
+.team-detail-card:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--humach-blue), var(--humach-violet), var(--humach-green));
+}
+
+.team-detail-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(25, 211, 255, 0.26);
+  box-shadow: 0 28px 76px rgba(7, 20, 38, 0.13);
+}
+
+.team-photo {
+  width: 132px;
+  height: 132px;
+  border-radius: 34px;
+  margin-bottom: 22px;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  box-shadow: 0 18px 34px rgba(7, 20, 38, 0.14);
+  background: linear-gradient(135deg, rgba(25, 211, 255, 0.16), rgba(124, 60, 255, 0.14));
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-photo i {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 52px;
+}
+
+.team-detail-card > span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--humach-blue-dark);
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.team-detail-card h3 {
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+
+.team-role {
+  display: block;
+  color: var(--humach-navy);
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.team-detail-card p {
+  color: #64748b;
+  line-height: 1.72;
+}
+
+.team-list-block {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(7, 20, 38, 0.08);
+}
+
+.team-list-block span {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.team-list-block ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.team-list-block li {
+  color: #42526a;
+  font-size: 13px;
+  line-height: 1.65;
+  margin-bottom: 6px;
+}
+
+.humach-team-groups {
+  background:
+    radial-gradient(circle at 85% 12%, rgba(124, 60, 255, 0.10), transparent 28%),
+    #eef7ff;
+}
+
+.team-group-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.team-group-grid article {
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 46px rgba(7, 20, 38, 0.07);
+}
+
+.humach-team-pathways {
+  background: #ffffff;
+}
+
+.team-pathway-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.team-pathway-grid article {
+  padding: 28px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 46px rgba(7, 20, 38, 0.07);
+}
+
+.team-pathway-grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-family: var(--heading-font);
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.team-pathway-grid h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.team-pathway-grid p {
+  margin: 0;
+  color: #526179;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.project-status.planned {
+  color: #475569;
+  background: rgba(100, 116, 139, 0.14);
+}
+
+.humach-team-cta {
+  background:
+    radial-gradient(circle at 16% 20%, rgba(25, 211, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 85% 12%, rgba(124, 60, 255, 0.20), transparent 24%),
+    #061221;
+}
+
+@media (max-width: 1199px) {
+  .team-group-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .team-principle-grid,
+  .team-group-grid,
+  .team-pathway-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-detail-card {
+    padding: 24px;
+  }
+}
+
+/* Step 10: Publications page */
+.humach-publications-page .humach-page-hero {
+  min-height: 78vh;
+}
+
+.humach-publications-hero {
+  background:
+    radial-gradient(circle at 18% 16%, rgba(25, 211, 255, 0.23), transparent 28%),
+    radial-gradient(circle at 82% 10%, rgba(0, 255, 168, 0.13), transparent 24%),
+    radial-gradient(circle at 60% 70%, rgba(124, 60, 255, 0.16), transparent 30%),
+    linear-gradient(135deg, #061221 0%, #071426 48%, #0b1f3a 100%);
+}
+
+.humach-publications-intro {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(25, 211, 255, 0.10), transparent 28%),
+    #eef7ff;
+}
+
+.publication-principle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.publication-principle-grid article {
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 16px 42px rgba(7, 20, 38, 0.06);
+}
+
+.publication-principle-grid i,
+.publication-type-grid i {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.publication-principle-grid h3,
+.publication-type-grid h3 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.publication-principle-grid p,
+.publication-type-grid p {
+  color: #64748b;
+  line-height: 1.65;
+  margin: 0;
+  font-size: 14px;
+}
+
+.humach-publication-directory {
+  background: #ffffff;
+}
+
+.publication-grid-item {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.publication-grid-item.is-hidden {
+  display: none;
+}
+
+.publication-detail-card {
+  position: relative;
+  height: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 50px rgba(7, 20, 38, 0.08);
+  transition: 0.25s ease;
+  overflow: hidden;
+}
+
+.publication-detail-card:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--humach-violet), var(--humach-blue), var(--humach-green));
+}
+
+.publication-detail-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(25, 211, 255, 0.34);
+  box-shadow: 0 26px 74px rgba(7, 20, 38, 0.13);
+}
+
+.publication-card-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.publication-year-large {
+  flex: 0 0 auto;
+  width: 92px;
+  height: 92px;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.publication-detail-card .project-status {
+  margin-bottom: 10px;
+}
+
+.project-status.template {
+  color: #334155;
+  background: rgba(100, 116, 139, 0.16);
+}
+
+.publication-detail-card h3 {
+  font-size: 24px;
+  line-height: 1.28;
+  margin-bottom: 10px;
+}
+
+.publication-authors {
+  color: var(--humach-blue-dark) !important;
+  font-weight: 900;
+  font-size: 14px;
+  margin-bottom: 12px !important;
+}
+
+.publication-detail-card p {
+  color: #64748b;
+  line-height: 1.72;
+}
+
+.publication-abstract {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 22px;
+  color: #42526a;
+  background: rgba(25, 211, 255, 0.07);
+  border: 1px solid rgba(25, 211, 255, 0.11);
+  line-height: 1.68;
+  font-size: 14px;
+}
+
+.publication-related {
+  margin-top: 20px;
+}
+
+.publication-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.publication-link-row a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  color: #061221;
+  background: linear-gradient(135deg, rgba(25, 211, 255, 0.18), rgba(0, 255, 168, 0.14));
+  border: 1px solid rgba(25, 211, 255, 0.18);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.publication-link-row a:hover {
+  transform: translateY(-1px);
+  color: #061221;
+  border-color: rgba(25, 211, 255, 0.45);
+}
+
+.humach-publication-types {
+  background:
+    radial-gradient(circle at 85% 12%, rgba(124, 60, 255, 0.10), transparent 28%),
+    #eef7ff;
+}
+
+.publication-type-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.publication-type-grid article {
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 46px rgba(7, 20, 38, 0.07);
+}
+
+.humach-publication-workflow {
+  background: #ffffff;
+}
+
+.publication-workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.publication-workflow-grid article {
+  padding: 28px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 46px rgba(7, 20, 38, 0.07);
+}
+
+.publication-workflow-grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-family: var(--heading-font);
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.publication-workflow-grid h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.publication-workflow-grid p {
+  margin: 0;
+  color: #526179;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.humach-publications-cta {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(25, 211, 255, 0.20), transparent 28%),
+    radial-gradient(circle at 85% 12%, rgba(0, 255, 168, 0.14), transparent 24%),
+    #061221;
+}
+
+@media (max-width: 1199px) {
+  .publication-type-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .publication-principle-grid,
+  .publication-type-grid,
+  .publication-workflow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card-head {
+    align-items: flex-start;
+  }
+
+  .publication-year-large {
+    width: 78px;
+    height: 78px;
+    font-size: 12px;
+  }
+
+  .publication-detail-card {
+    padding: 24px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# HUMACH Step 11 - News Page
+--------------------------------------------------------------*/
+.humach-news-hero {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(25, 211, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 18%, rgba(124, 60, 255, 0.18), transparent 30%),
+    linear-gradient(135deg, #061221 0%, #091a2d 56%, #061221 100%);
+}
+
+.humach-news-summary-card code,
+.news-toolbar code {
+  color: var(--humach-green);
+}
+
+.news-principle-grid,
+.news-channel-grid,
+.news-workflow-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.news-principle-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.news-principle-grid article,
+.news-channel-grid article,
+.news-workflow-grid article {
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 18px 46px rgba(7, 20, 38, 0.07);
+}
+
+.news-principle-grid i,
+.news-channel-grid i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.news-principle-grid h3,
+.news-channel-grid h3,
+.news-workflow-grid h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.news-principle-grid p,
+.news-channel-grid p,
+.news-workflow-grid p {
+  color: #526179;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 14px;
+}
+
+.humach-news-directory {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(25, 211, 255, 0.08), transparent 28%),
+    #ffffff;
+}
+
+.news-detail-card {
+  height: 100%;
+  padding: 34px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(7, 20, 38, 0.08);
+  box-shadow: 0 20px 54px rgba(7, 20, 38, 0.08);
+  transition: 0.28s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.news-detail-card:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--humach-blue), var(--humach-violet), var(--humach-green));
+}
+
+.news-detail-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(25, 211, 255, 0.34);
+  box-shadow: 0 26px 74px rgba(7, 20, 38, 0.13);
+}
+
+.news-detail-card.featured {
+  background:
+    radial-gradient(circle at 90% 8%, rgba(0, 255, 168, 0.14), transparent 26%),
+    linear-gradient(180deg, #ffffff, #f6fbff);
+}
+
+.news-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.news-card-head time,
+.news-card-head span {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.news-card-head time {
+  color: #061221;
+  background: rgba(25, 211, 255, 0.16);
+  border: 1px solid rgba(25, 211, 255, 0.18);
+}
+
+.news-card-head span {
+  color: var(--humach-violet);
+  background: rgba(124, 60, 255, 0.12);
+  border: 1px solid rgba(124, 60, 255, 0.16);
+}
+
+.news-detail-card h3 {
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 12px 0;
+}
+
+.news-detail-card p {
+  color: #64748b;
+  line-height: 1.72;
+}
+
+.news-detail-copy {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 22px;
+  color: #42526a;
+  background: rgba(25, 211, 255, 0.07);
+  border: 1px solid rgba(25, 211, 255, 0.11);
+  line-height: 1.68;
+  font-size: 14px;
+}
+
+.news-channel-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.humach-news-channels {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(124, 60, 255, 0.09), transparent 26%),
+    #eef7ff;
+}
+
+.news-workflow-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.news-workflow-grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  color: #061221;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  font-family: var(--heading-font);
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.humach-news-cta {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(25, 211, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 84% 14%, rgba(0, 255, 168, 0.13), transparent 24%),
+    #061221;
+}
+
+.news-grid-item.is-hidden {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .news-channel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .news-principle-grid,
+  .news-channel-grid,
+  .news-workflow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-detail-card {
+    padding: 24px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# HUMACH Step 12: Contact and Collaboration Page
+--------------------------------------------------------------*/
+.humach-contact-page .humach-contact-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-principle-grid,
+.contact-method-grid,
+.collaboration-route-grid,
+.contact-process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.contact-principle-grid article,
+.contact-method-grid article,
+.collaboration-route-grid article,
+.contact-process-grid article,
+.contact-form-info-card,
+.humach-contact-form,
+.contact-toolbar,
+.contact-inquiry-card {
+  border: 1px solid rgba(52, 211, 235, 0.16);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+.contact-principle-grid article,
+.contact-method-grid article,
+.collaboration-route-grid article,
+.contact-process-grid article {
+  padding: 24px;
+  min-height: 100%;
+}
+
+.contact-principle-grid i,
+.contact-method-grid i {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #07111f;
+  background: linear-gradient(135deg, #6ee7f9, #a78bfa);
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+}
+
+.contact-principle-grid h3,
+.contact-method-grid h3,
+.collaboration-route-grid h3,
+.contact-process-grid h3,
+.contact-inquiry-card h3 {
+  font-family: var(--humach-heading-font, "Space Grotesk", sans-serif);
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.contact-principle-grid p,
+.contact-method-grid p,
+.collaboration-route-grid p,
+.contact-process-grid p,
+.contact-inquiry-card p,
+.contact-form-info-card p {
+  color: rgba(15, 23, 42, 0.72);
+}
+
+.contact-toolbar {
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.contact-toolbar span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #0891b2;
+}
+
+.contact-toolbar strong {
+  color: #0f172a;
+}
+
+.contact-inquiry-card {
+  position: relative;
+  overflow: hidden;
+  padding: 28px;
+  min-height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-inquiry-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(52, 211, 235, 0.18), transparent 42%);
+  pointer-events: none;
+}
+
+.contact-inquiry-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(14, 165, 233, 0.34);
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.14);
+}
+
+.contact-inquiry-card.featured {
+  border-color: rgba(14, 165, 233, 0.38);
+}
+
+.contact-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #07111f;
+  background: linear-gradient(135deg, #67e8f9, #c084fc);
+  margin-bottom: 18px;
+  font-size: 1.35rem;
+}
+
+.contact-inquiry-card span:not(.project-meta span) {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0e7490;
+  margin-bottom: 10px;
+}
+
+.contact-inquiry-card ul {
+  margin: 18px 0 0;
+  padding-left: 18px;
+  color: rgba(15, 23, 42, 0.72);
+}
+
+.contact-method-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.contact-method-grid a {
+  color: #0e7490;
+  font-weight: 800;
+}
+
+.contact-form-info-card,
+.humach-contact-form {
+  padding: 32px;
+  height: 100%;
+}
+
+.contact-checklist {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.contact-checklist span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(14, 165, 233, 0.08);
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.contact-checklist i {
+  color: #0891b2;
+}
+
+.humach-contact-form label {
+  display: block;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.humach-contact-form input,
+.humach-contact-form select,
+.humach-contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 16px;
+  padding: 13px 15px;
+  color: #0f172a;
+  background: rgba(248, 250, 252, 0.9);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.humach-contact-form input:focus,
+.humach-contact-form select:focus,
+.humach-contact-form textarea:focus {
+  border-color: rgba(14, 165, 233, 0.58);
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.12);
+  background: #ffffff;
+}
+
+.contact-form-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: rgba(15, 23, 42, 0.68);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.collaboration-route-grid,
+.contact-process-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.collaboration-route-grid span,
+.contact-process-grid span {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  color: #07111f;
+  background: linear-gradient(135deg, #6ee7f9, #a78bfa);
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.humach-contact-cta h3 {
+  color: #ffffff;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+.humach-contact-cta p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+@media (max-width: 1199px) {
+  .contact-method-grid,
+  .collaboration-route-grid,
+  .contact-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-principle-grid,
+  .contact-method-grid,
+  .collaboration-route-grid,
+  .contact-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-form-info-card,
+  .humach-contact-form,
+  .contact-inquiry-card {
+    padding: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# HUMACH Step 13: Mobile Responsiveness and Accessibility
+--------------------------------------------------------------*/
+html {
+  scroll-padding-top: 92px;
+}
+
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+.humach-theme a,
+.humach-theme button,
+.humach-theme input,
+.humach-theme textarea,
+.humach-theme select {
+  -webkit-tap-highlight-color: rgba(25, 211, 255, 0.22);
+}
+
+.humach-theme a:focus-visible,
+.humach-theme button:focus-visible,
+.humach-theme input:focus-visible,
+.humach-theme textarea:focus-visible,
+.humach-theme select:focus-visible,
+.humach-theme [tabindex]:focus-visible {
+  outline: 3px solid rgba(25, 211, 255, 0.94);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+.humach-theme .btn-humach:focus-visible,
+.humach-theme .humach-nav-cta:focus-visible,
+.humach-theme .scroll-top:focus-visible {
+  outline-offset: 5px;
+}
+
+.mobile-nav-toggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.92);
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  line-height: 1;
+}
+
+.mobile-nav-toggle:hover,
+.mobile-nav-toggle:focus-visible {
+  color: var(--humach-blue);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.humach-theme .navmenu a,
+.humach-theme .footer a,
+.humach-theme .contact-method-card a,
+.humach-theme .publication-card a,
+.humach-theme .project-card a {
+  text-underline-offset: 0.2em;
+}
+
+.humach-theme .navmenu a:hover,
+.humach-theme .footer a:hover,
+.humach-theme .contact-method-card a:hover,
+.humach-theme .publication-card a:hover,
+.humach-theme .project-card a:hover {
+  text-decoration: underline;
+}
+
+.humach-theme .filter-toolbar,
+.humach-theme .project-filter-bar,
+.humach-theme .development-filter-bar,
+.humach-theme .opportunity-filter-bar,
+.humach-theme .publication-filter-bar,
+.humach-theme .team-filter-bar,
+.humach-theme .news-filter-bar,
+.humach-theme [data-humach-render$="-filters"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.humach-theme [data-humach-render$="-filters"] button,
+.humach-theme .filter-toolbar button {
+  min-height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #ffffff;
+  color: #102033;
+  font-weight: 800;
+  padding: 9px 16px;
+  line-height: 1.2;
+}
+
+.humach-theme [data-humach-render$="-filters"] button.active,
+.humach-theme [data-humach-render$="-filters"] button[aria-pressed="true"],
+.humach-theme .filter-toolbar button.active,
+.humach-theme .filter-toolbar button[aria-pressed="true"] {
+  color: #061221;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  box-shadow: 0 12px 30px rgba(25, 211, 255, 0.18);
+}
+
+.humach-theme img,
+.humach-theme svg,
+.humach-theme video {
+  max-width: 100%;
+  height: auto;
+}
+
+.humach-theme .section {
+  overflow-wrap: anywhere;
+}
+
+.humach-theme .humach-page-hero,
+.humach-theme .humach-hero {
+  isolation: isolate;
+}
+
+.humach-theme .hero-actions,
+.humach-theme .page-hero-actions,
+.humach-theme .cta-actions,
+.humach-theme .contact-actions {
+  flex-wrap: wrap;
+}
+
+.humach-theme .hero-actions .btn-humach,
+.humach-theme .page-hero-actions .btn-humach,
+.humach-theme .cta-actions .btn-humach,
+.humach-theme .contact-actions .btn-humach {
+  white-space: normal;
+  text-align: center;
+}
+
+.humach-theme .humach-contact-form input,
+.humach-theme .humach-contact-form textarea,
+.humach-theme .humach-contact-form select {
+  min-height: 48px;
+  font-size: 1rem;
+}
+
+.humach-theme .humach-contact-form textarea {
+  min-height: 150px;
+}
+
+.humach-theme .humach-contact-form label {
+  font-weight: 800;
+  color: #102033;
+  margin-bottom: 8px;
+}
+
+/* Better desktop dropdown focus affordance */
+@media (min-width: 1200px) {
+  .humach-theme .navmenu .dropdown:focus-within > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1199px) {
+  html {
+    scroll-padding-top: 82px;
+  }
+
+  .humach-header {
+    padding: 10px 0;
+  }
+
+  .humach-theme .navmenu ul {
+    inset: 72px 16px 16px 16px;
+    max-height: calc(100dvh - 96px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 16px;
+    border-radius: 22px;
+  }
+
+  .humach-theme .navmenu a,
+  .humach-theme .navmenu a:focus {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 14px;
+  }
+
+  .humach-theme .navmenu .dropdown ul {
+    position: static;
+    box-shadow: none;
+    border-radius: 16px;
+    margin: 8px 0 10px 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .humach-theme .navmenu .dropdown ul a {
+    font-size: 0.95rem;
+    min-height: 42px;
+  }
+
+  .humach-hero {
+    min-height: auto;
+    padding: 136px 0 74px;
+  }
+
+  .humach-hero h2,
+  .humach-page-hero h1 {
+    font-size: clamp(2.3rem, 8vw, 4.3rem);
+    line-height: 1;
+  }
+
+  .hero-dashboard-card,
+  .page-hero-card,
+  .contact-form-info-card,
+  .humach-contact-form {
+    max-width: 100%;
+  }
+
+  .snapshot-grid,
+  .research-focus-grid,
+  .development-directory-grid,
+  .project-directory-grid,
+  .opportunity-directory-grid,
+  .publication-directory-grid,
+  .team-directory-grid,
+  .news-directory-grid,
+  .contact-method-grid,
+  .contact-inquiry-grid,
+  .contact-process-grid,
+  .collaboration-route-grid {
+    gap: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 76px;
+  }
+
+  .container,
+  .container-fluid,
+  .container-xl {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .humach-header .container-fluid {
+    gap: 10px;
+  }
+
+  .humach-logo img {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+  }
+
+  .header .humach-logo h1 {
+    font-size: 1.05rem;
+    line-height: 1.1;
+  }
+
+  .humach-hero {
+    padding: 118px 0 58px;
+  }
+
+  .humach-hero .brand-eyebrow,
+  .humach-page-hero .brand-eyebrow,
+  .section-kicker,
+  .identity-card-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.11em;
+  }
+
+  .brand-full-name,
+  .hero-lead,
+  .page-hero-lead,
+  .humach-page-hero p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .hero-actions,
+  .page-hero-actions,
+  .cta-actions,
+  .contact-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-actions .btn-humach,
+  .page-hero-actions .btn-humach,
+  .cta-actions .btn-humach,
+  .contact-actions .btn-humach {
+    width: 100%;
+    min-height: 50px;
+  }
+
+  .humach-theme .section-title {
+    padding-bottom: 28px;
+  }
+
+  .humach-theme .section-title p {
+    font-size: clamp(1.85rem, 9vw, 2.7rem);
+    line-height: 1.05;
+  }
+
+  .humach-theme .section {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .snapshot-card,
+  .research-card,
+  .development-card,
+  .project-card,
+  .opportunity-card,
+  .publication-card,
+  .team-profile-card,
+  .news-card,
+  .contact-inquiry-card,
+  .contact-method-card,
+  .contact-form-info-card,
+  .humach-contact-form {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .acronym-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .humach-theme [data-humach-render$="-filters"],
+  .humach-theme .filter-toolbar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 4px 2px 14px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .humach-theme [data-humach-render$="-filters"] button,
+  .humach-theme .filter-toolbar button {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .humach-footer .footer-links,
+  .footer .footer-about {
+    margin-bottom: 24px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 575px) {
+  .humach-theme .navmenu ul {
+    inset: 68px 10px 12px 10px;
+    max-height: calc(100dvh - 88px);
+    border-radius: 18px;
+  }
+
+  .humach-hero h2,
+  .humach-page-hero h1 {
+    font-size: clamp(2rem, 13vw, 3.2rem);
+  }
+
+  .hero-dashboard-card,
+  .page-hero-card,
+  .about-floating-badge,
+  .humach-data-status-strip p {
+    border-radius: 20px;
+  }
+
+  .dashboard-title,
+  .page-hero-card h3,
+  .contact-form-info-card h3,
+  .humach-contact-form h3 {
+    font-size: 1.35rem;
+  }
+
+  .footer .copyright .credits {
+    font-size: 0.8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  [data-aos] {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .hero-orb,
+  .pulse-dot,
+  .hero-network-card span {
+    animation: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .btn-humach,
+  .humach-theme [data-humach-render$="-filters"] button,
+  .mobile-nav-toggle {
+    border: 1px solid ButtonText;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Step 14: Animation and Visual Polish
+# Lightweight motion, depth, hover states, and premium research-lab styling
+--------------------------------------------------------------*/
+:root {
+  --humach-polish-glow: 0 0 0 1px rgba(25, 211, 255, 0.14), 0 24px 70px rgba(25, 211, 255, 0.12);
+  --humach-polish-glow-strong: 0 0 0 1px rgba(25, 211, 255, 0.22), 0 30px 90px rgba(25, 211, 255, 0.18);
+  --humach-transition-smooth: 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body.humach-step14 {
+  overflow-x: clip;
+}
+
+body.humach-step14::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(25, 211, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(25, 211, 255, 0.025) 1px, transparent 1px),
+    radial-gradient(circle at var(--humach-cursor-x, 50%) var(--humach-cursor-y, 20%), rgba(25, 211, 255, 0.07), transparent 24rem);
+  background-size: 82px 82px, 82px 82px, auto;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.75), transparent 78%);
+}
+
+.humach-step14 .humach-header {
+  transition: background-color var(--humach-transition-smooth), box-shadow var(--humach-transition-smooth), border-color var(--humach-transition-smooth), transform var(--humach-transition-smooth);
+}
+
+.humach-step14 .humach-logo img {
+  box-shadow: 0 0 0 1px rgba(25, 211, 255, 0.18), 0 12px 36px rgba(25, 211, 255, 0.12);
+}
+
+.humach-step14 .humach-logo h1,
+.humach-step14 .humach-hero h2,
+.humach-step14 .humach-page-hero h1 {
+  background: linear-gradient(135deg, #ffffff 0%, #dff9ff 35%, #19d3ff 70%, #9b7cff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.humach-step14 .humach-hero::after,
+.humach-step14 .humach-page-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 8% 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(25, 211, 255, 0.42), rgba(124, 60, 255, 0.34), transparent);
+  pointer-events: none;
+}
+
+.humach-step14 .hero-grid {
+  opacity: 0.82;
+  animation: humach-grid-drift 24s linear infinite;
+}
+
+.humach-step14 .hero-orb-one {
+  animation: humach-orb-float-one 13s ease-in-out infinite;
+}
+
+.humach-step14 .hero-orb-two {
+  animation: humach-orb-float-two 15s ease-in-out infinite;
+}
+
+.humach-step14 .hero-network-card {
+  filter: drop-shadow(0 20px 45px rgba(25, 211, 255, 0.20));
+}
+
+.humach-step14 .pulse-dot {
+  box-shadow: 0 0 0 rgba(0, 255, 168, 0.56);
+  animation: humach-pulse-ring 2.2s ease-out infinite;
+}
+
+.humach-step14 .btn-humach,
+.humach-step14 .humach-nav-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.humach-step14 .btn-humach::before,
+.humach-step14 .humach-nav-cta::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.38) 40%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 650ms ease;
+}
+
+.humach-step14 .btn-humach:hover::before,
+.humach-step14 .humach-nav-cta:hover::before,
+.humach-step14 .btn-humach:focus-visible::before,
+.humach-step14 .humach-nav-cta:focus-visible::before {
+  transform: translateX(120%);
+}
+
+.humach-step14 .humach-polish-card,
+.humach-step14 .snapshot-card,
+.humach-step14 .research-card,
+.humach-step14 .development-card,
+.humach-step14 .development-detail-card,
+.humach-step14 .project-card,
+.humach-step14 .project-detail-card,
+.humach-step14 .opportunity-card,
+.humach-step14 .opportunity-detail-card,
+.humach-step14 .publication-card,
+.humach-step14 .publication-detail-card,
+.humach-step14 .team-profile-card,
+.humach-step14 .team-detail-card,
+.humach-step14 .news-card,
+.humach-step14 .news-mini-card,
+.humach-step14 .news-detail-card,
+.humach-step14 .contact-inquiry-card,
+.humach-step14 .contact-method-card,
+.humach-step14 .page-hero-card,
+.humach-step14 .hero-dashboard-card,
+.humach-step14 .humach-page-summary-card {
+  position: relative;
+  isolation: isolate;
+  transition: transform var(--humach-transition-smooth), box-shadow var(--humach-transition-smooth), border-color var(--humach-transition-smooth), background-color var(--humach-transition-smooth);
+}
+
+.humach-step14 .humach-polish-card::before,
+.humach-step14 .snapshot-card::before,
+.humach-step14 .research-card::before,
+.humach-step14 .development-card::before,
+.humach-step14 .development-detail-card::before,
+.humach-step14 .project-card::before,
+.humach-step14 .project-detail-card::before,
+.humach-step14 .opportunity-card::before,
+.humach-step14 .opportunity-detail-card::before,
+.humach-step14 .publication-card::before,
+.humach-step14 .publication-detail-card::before,
+.humach-step14 .team-profile-card::before,
+.humach-step14 .team-detail-card::before,
+.humach-step14 .news-card::before,
+.humach-step14 .news-mini-card::before,
+.humach-step14 .news-detail-card::before,
+.humach-step14 .contact-inquiry-card::before,
+.humach-step14 .contact-method-card::before,
+.humach-step14 .page-hero-card::before,
+.humach-step14 .hero-dashboard-card::before,
+.humach-step14 .humach-page-summary-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(circle at var(--card-x, 50%) var(--card-y, 20%), rgba(25, 211, 255, 0.16), transparent 34%),
+    linear-gradient(135deg, rgba(255,255,255,0.08), transparent 42%);
+  opacity: 0;
+  transition: opacity var(--humach-transition-smooth);
+}
+
+.humach-step14 .humach-polish-card:hover,
+.humach-step14 .snapshot-card:hover,
+.humach-step14 .research-card:hover,
+.humach-step14 .development-card:hover,
+.humach-step14 .development-detail-card:hover,
+.humach-step14 .project-card:hover,
+.humach-step14 .project-detail-card:hover,
+.humach-step14 .opportunity-card:hover,
+.humach-step14 .opportunity-detail-card:hover,
+.humach-step14 .publication-card:hover,
+.humach-step14 .publication-detail-card:hover,
+.humach-step14 .team-profile-card:hover,
+.humach-step14 .team-detail-card:hover,
+.humach-step14 .news-card:hover,
+.humach-step14 .news-mini-card:hover,
+.humach-step14 .news-detail-card:hover,
+.humach-step14 .contact-inquiry-card:hover,
+.humach-step14 .contact-method-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--humach-polish-glow-strong);
+  border-color: rgba(25, 211, 255, 0.36);
+}
+
+.humach-step14 .humach-polish-card:hover::before,
+.humach-step14 .snapshot-card:hover::before,
+.humach-step14 .research-card:hover::before,
+.humach-step14 .development-card:hover::before,
+.humach-step14 .development-detail-card:hover::before,
+.humach-step14 .project-card:hover::before,
+.humach-step14 .project-detail-card:hover::before,
+.humach-step14 .opportunity-card:hover::before,
+.humach-step14 .opportunity-detail-card:hover::before,
+.humach-step14 .publication-card:hover::before,
+.humach-step14 .publication-detail-card:hover::before,
+.humach-step14 .team-profile-card:hover::before,
+.humach-step14 .team-detail-card:hover::before,
+.humach-step14 .news-card:hover::before,
+.humach-step14 .news-mini-card:hover::before,
+.humach-step14 .news-detail-card:hover::before,
+.humach-step14 .contact-inquiry-card:hover::before,
+.humach-step14 .contact-method-card:hover::before,
+.humach-step14 .page-hero-card:hover::before,
+.humach-step14 .hero-dashboard-card:hover::before,
+.humach-step14 .humach-page-summary-card:hover::before {
+  opacity: 1;
+}
+
+.humach-step14 .project-status,
+.humach-step14 .research-status {
+  position: relative;
+  overflow: hidden;
+}
+
+.humach-step14 .project-status::after,
+.humach-step14 .research-status::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 36%;
+  left: -50%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+  transform: skewX(-18deg);
+}
+
+.humach-step14 .project-status.active::after,
+.humach-step14 .project-status.open::after,
+.humach-step14 .project-status.recruiting::after,
+.humach-step14 .research-status.active::after {
+  animation: humach-badge-sheen 3.4s ease-in-out infinite;
+}
+
+.humach-step14 .section-title,
+.humach-step14 .humach-reveal {
+  will-change: transform, opacity;
+}
+
+.humach-step14 .humach-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 680ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 680ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.humach-step14 .humach-reveal.is-visible,
+.humach-step14 .humach-reveal.reveal-now {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.humach-step14 .pipeline-list div,
+.humach-step14 .research-pathway-grid article,
+.humach-step14 .project-workflow article,
+.humach-step14 .publication-workflow article,
+.humach-step14 .news-workflow article,
+.humach-step14 .contact-process article,
+.humach-step14 .opportunity-process article {
+  transition: transform var(--humach-transition-smooth), border-color var(--humach-transition-smooth), box-shadow var(--humach-transition-smooth);
+}
+
+.humach-step14 .pipeline-list div:hover,
+.humach-step14 .research-pathway-grid article:hover,
+.humach-step14 .project-workflow article:hover,
+.humach-step14 .publication-workflow article:hover,
+.humach-step14 .news-workflow article:hover,
+.humach-step14 .contact-process article:hover,
+.humach-step14 .opportunity-process article:hover {
+  transform: translateX(4px) translateY(-2px);
+  border-color: rgba(25, 211, 255, 0.32);
+  box-shadow: var(--humach-polish-glow);
+}
+
+.humach-step14 .research-summary-metrics b {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--humach-blue), var(--humach-green));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.humach-step14 .humach-floating-action-note {
+  position: fixed;
+  right: 18px;
+  bottom: 86px;
+  z-index: 996;
+  max-width: 230px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(25, 211, 255, 0.22);
+  background: rgba(3, 8, 23, 0.84);
+  color: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 44px rgba(3, 8, 23, 0.28);
+  backdrop-filter: blur(16px);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity var(--humach-transition-smooth), transform var(--humach-transition-smooth);
+}
+
+.humach-step14 .humach-floating-action-note.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.humach-step14 .humach-floating-action-note strong {
+  display: block;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+@keyframes humach-grid-drift {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(82px, 82px, 0); }
+}
+
+@keyframes humach-orb-float-one {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(24px, -18px, 0) scale(1.05); }
+}
+
+@keyframes humach-orb-float-two {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-22px, 16px, 0) scale(1.04); }
+}
+
+@keyframes humach-pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(0, 255, 168, 0.45); }
+  70% { box-shadow: 0 0 0 14px rgba(0, 255, 168, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 255, 168, 0); }
+}
+
+@keyframes humach-badge-sheen {
+  0%, 45% { left: -52%; }
+  70%, 100% { left: 120%; }
+}
+
+@media (max-width: 767px) {
+  .humach-step14 .humach-floating-action-note {
+    display: none;
+  }
+
+  .humach-step14 .humach-polish-card:hover,
+  .humach-step14 .snapshot-card:hover,
+  .humach-step14 .research-card:hover,
+  .humach-step14 .development-card:hover,
+  .humach-step14 .development-detail-card:hover,
+  .humach-step14 .project-card:hover,
+  .humach-step14 .project-detail-card:hover,
+  .humach-step14 .opportunity-card:hover,
+  .humach-step14 .opportunity-detail-card:hover,
+  .humach-step14 .publication-card:hover,
+  .humach-step14 .publication-detail-card:hover,
+  .humach-step14 .team-profile-card:hover,
+  .humach-step14 .team-detail-card:hover,
+  .humach-step14 .news-card:hover,
+  .humach-step14 .news-mini-card:hover,
+  .humach-step14 .news-detail-card:hover,
+  .humach-step14 .contact-inquiry-card:hover,
+  .humach-step14 .contact-method-card:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.humach-step14::before {
+    background-position: 0 0 !important;
+  }
+
+  .humach-step14 .hero-grid,
+  .humach-step14 .hero-orb-one,
+  .humach-step14 .hero-orb-two,
+  .humach-step14 .pulse-dot,
+  .humach-step14 .project-status::after,
+  .humach-step14 .research-status::after {
+    animation: none !important;
+  }
+
+  .humach-step14 .humach-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .humach-step14 .humach-logo h1,
+  .humach-step14 .humach-hero h2,
+  .humach-step14 .humach-page-hero h1,
+  .humach-step14 .research-summary-metrics b {
+    color: CanvasText;
+    background: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Member CV details system
+   -------------------------------------------------------------------------- */
+.member-cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  color: var(--humach-cyan, #55dfff);
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.member-cv-link:hover,
+.member-cv-link:focus-visible {
+  color: var(--humach-violet, #9b7cff);
+  text-decoration: underline;
+}
+
+.member-cv-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0 70px;
+  background: radial-gradient(circle at top left, rgba(70, 212, 255, 0.18), transparent 32%),
+    linear-gradient(135deg, #06111f 0%, #081827 45%, #0a1020 100%);
+}
+
+.member-cv-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.member-cv-photo {
+  width: 126px;
+  height: 126px;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(116, 220, 255, 0.38);
+  background: rgba(255, 255, 255, 0.08);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
+}
+
+.member-cv-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-cv-photo i {
+  color: var(--humach-cyan, #55dfff);
+  font-size: 3.2rem;
+}
+
+.member-cv-title-block h1 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 4.2rem);
+  line-height: 1;
+  margin: 0.2rem 0 0.5rem;
+}
+
+.member-cv-title-block strong {
+  display: block;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+}
+
+.member-cv-title-block p {
+  max-width: 780px;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 1rem;
+}
+
+.member-cv-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.member-cv-shell {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
+}
+
+.cv-section-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.cv-sidebar {
+  position: sticky;
+  top: 105px;
+  display: grid;
+  gap: 1rem;
+}
+
+.cv-side-card,
+.cv-note-box,
+.cv-section,
+.cv-not-found {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(15, 31, 52, 0.08);
+  border-radius: 24px;
+  padding: 1.25rem;
+  box-shadow: 0 20px 55px rgba(20, 44, 78, 0.08);
+}
+
+.cv-side-card h2,
+.cv-note-box h2,
+.cv-section h2 {
+  font-size: 1.05rem;
+  margin-bottom: 0.85rem;
+  color: #0b1b31;
+}
+
+.cv-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.cv-section h2 i {
+  color: var(--humach-cyan, #16a3c7);
+}
+
+.cv-main {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.cv-entry,
+.cv-linked-card {
+  border: 1px solid rgba(20, 44, 78, 0.08);
+  border-radius: 18px;
+  padding: 1rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(247, 251, 255, 0.95));
+  margin-bottom: 0.85rem;
+}
+
+.cv-entry:last-child,
+.cv-linked-card:last-child {
+  margin-bottom: 0;
+}
+
+.cv-entry-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0.3rem;
+}
+
+.cv-entry h3,
+.cv-linked-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+  color: #0b1b31;
+}
+
+.cv-entry-head span,
+.cv-mini-line {
+  color: #55708f;
+  font-size: 0.92rem;
+}
+
+.cv-entry strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #28415f;
+}
+
+.cv-entry p,
+.cv-linked-card p,
+.cv-side-card p,
+.cv-note-box li {
+  color: #475b75;
+}
+
+.cv-stacked-tags {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cv-note-box ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.cv-print-header {
+  display: none;
+}
+
+.member-cv-loading {
+  padding-top: 140px;
+}
+
+.cv-not-found {
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .member-cv-head,
+  .cv-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .member-cv-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cv-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 575px) {
+  .member-cv-hero {
+    padding: 125px 0 52px;
+  }
+
+  .member-cv-photo {
+    width: 104px;
+    height: 104px;
+    border-radius: 22px;
+  }
+
+  .member-cv-actions .btn-humach {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cv-entry-head {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}
+
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  body.humach-member-cv-page {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  .cv-no-print,
+  .humach-header,
+  .footer,
+  .scroll-top,
+  #preloader,
+  .mobile-nav-toggle,
+  .member-cv-actions,
+  .hero-grid,
+  .hero-orb,
+  .humach-page-hero,
+  .cursor-glow,
+  .humach-readiness-note {
+    display: none !important;
+  }
+
+  .member-cv-hero {
+    background: #fff !important;
+    color: #111 !important;
+    padding: 0 !important;
+  }
+
+  .member-cv-head {
+    display: none !important;
+  }
+
+  .member-cv-shell {
+    background: #fff !important;
+    padding: 0 !important;
+  }
+
+  .cv-print-header {
+    display: block !important;
+    border-bottom: 2px solid #111;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+  }
+
+  .cv-print-header h1 {
+    font-size: 24px;
+    margin: 0 0 4px;
+  }
+
+  .cv-print-header p {
+    margin: 0;
+  }
+
+  .cv-section-grid {
+    display: block !important;
+  }
+
+  .cv-sidebar {
+    position: static !important;
+    display: block !important;
+  }
+
+  .cv-side-card,
+  .cv-note-box,
+  .cv-section,
+  .cv-entry,
+  .cv-linked-card {
+    box-shadow: none !important;
+    border: 1px solid #bbb !important;
+    background: #fff !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .cv-section {
+    margin-top: 12px;
+    padding: 10px !important;
+  }
+
+  .cv-section h2 {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+
+  .cv-entry,
+  .cv-linked-card {
+    margin-bottom: 8px;
+    padding: 8px !important;
+  }
+
+  .project-meta span,
+  .tag-row span {
+    border: 1px solid #aaa !important;
+    color: #111 !important;
+    background: #fff !important;
+  }
+
+  a[href]::after {
+    content: "" !important;
+  }
+}
+
+
+/* Logo asset update: square icon in header, horizontal lockup in footer */
+.humach-logo img {
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.humach-footer .footer-about .logo img {
+  width: min(260px, 100%);
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 18px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(25, 211, 255, 0.18);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.humach-footer .footer-about .logo {
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 575px) {
+  .humach-footer .footer-about .logo img {
+    width: min(220px, 100%);
+  }
+}
+
+/*--------------------------------------------------------------
+# HUMACH Mobile Navigation Stability Fix
+# Keeps the mobile menu as a true overlay instead of rendering below content.
+--------------------------------------------------------------*/
+@media (max-width: 1199px) {
+  body.humach-theme .humach-navmenu {
+    z-index: 9998;
+  }
+
+  body.humach-theme .mobile-nav-toggle {
+    position: relative;
+    z-index: 10001;
+    flex: 0 0 auto;
+  }
+
+  body.humach-theme.mobile-nav-active .humach-navmenu {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+    background: rgba(3, 8, 23, 0.88);
+    backdrop-filter: blur(18px);
+    z-index: 9998;
+  }
+
+  body.humach-theme.mobile-nav-active .humach-navmenu > ul {
+    display: block !important;
+    position: fixed !important;
+    inset: 76px 16px 16px 16px !important;
+    max-height: calc(100dvh - 96px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    border-radius: 24px;
+    background: rgba(7, 20, 38, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+  }
+
+  body.humach-theme.mobile-nav-active .mobile-nav-toggle {
+    position: fixed !important;
+    top: 16px !important;
+    right: 16px !important;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 10002;
+  }
+}

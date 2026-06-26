@@ -1,0 +1,727 @@
+{
+  "section": {
+    "title": "Member CV Details",
+    "subtitle": "Printable member profiles",
+    "description": "Additional CV-style profile content for HUMACH team members, including academic information, experience, projects, publications, certificates, courses, and extracurricular activities."
+  },
+  "items": [
+    {
+      "memberId": "research-lead",
+      "headline": "PhD researcher and research-development enthusiast specialising in data analytics, machine learning, deep learning, explainable AI, generative AI, agentic AI, health informatics, biomedical signal processing, and applied software development.",
+      "academicInfo": [
+        {
+          "title": "Doctor of Philosophy (PhD) in Computational Science and Mathematical Modelling",
+          "institution": "Coventry University, Centre for Computational Science and Mathematical Modelling, United Kingdom",
+          "period": "Jan. 15, 2023 – Present",
+          "details": "Cotutelle/joint PhD program with Deakin University. Research topic: A Machine Learning-based Analysis of Sleep Patterns in Healthy Ageing using Physiological Signals. Focus areas include hypnogram-based sleep analysis, sleep disorder detection, interpretable ML, DL, CNN/RNN/GNN methods, and wearable sleep-monitoring feasibility.",
+          "tags": [
+            "PhD",
+            "CSM",
+            "Sleep Analysis",
+            "Hypnogram",
+            "Health Informatics",
+            "ML",
+            "DL"
+          ]
+        },
+        {
+          "title": "Doctor of Philosophy (PhD) in Information Technology",
+          "institution": "Deakin University, School of Information Technology, Melbourne, Australia",
+          "period": "Jan. 15, 2023 – Present",
+          "details": "Deakin-hosted Cotutelle PhD with Coventry University, supported by Deakin University Postgraduate Research Scholarship (DUPRS). Research is based in applied ML and DL with biomedical signal processing for sleep disorder analysis.",
+          "tags": [
+            "PhD",
+            "Information Technology",
+            "DUPRS",
+            "Biomedical AI",
+            "Signal Processing"
+          ]
+        },
+        {
+          "title": "Master of Science by Research (MRes) in Information Technology",
+          "institution": "Deakin University, School of Information Technology, Melbourne, Australia",
+          "period": "Feb. 21, 2020 – Oct. 05, 2022",
+          "details": "Research-based master’s degree under the Data to Intelligence research environment. Thesis: Minimising Scalp Electroencephalogram (EEG) Channels for Epileptic Seizure Detection. The research applied ML, signal processing, and optimisation to EEG-based seizure detection and channel minimisation.",
+          "tags": [
+            "MRes",
+            "EEG",
+            "Epilepsy",
+            "Signal Processing",
+            "Machine Learning"
+          ]
+        },
+        {
+          "title": "Bachelor of Science in Computer Science and Engineering",
+          "institution": "Hajee Mohammad Danesh Science and Technology University (HSTU), Dinajpur, Bangladesh",
+          "period": "Jan. 05, 2007 – Feb. 19, 2012",
+          "details": "Four-year CSE degree with focus on programming, algorithms, database management, machine learning, pattern recognition, and mobile application development. Final-year thesis/project: J2ME English-to-English Dictionary with Indexed Binary Search.",
+          "tags": [
+            "BSc",
+            "CSE",
+            "Algorithms",
+            "Database",
+            "Pattern Recognition",
+            "J2ME"
+          ]
+        }
+      ],
+      "professionalExperience": [
+        {
+          "title": "Graduate Researcher (PhD Student)",
+          "organization": "Deakin University",
+          "period": "Jan. 15, 2023 – Present",
+          "details": "Conducts applied ML research for sleep disorder detection using hypnogram data, including sleep dynamics, age-related sleep analysis, noise impact analysis, model evaluation, documentation, and publication preparation.",
+          "tags": [
+            "Research",
+            "Sleep",
+            "Hypnogram",
+            "ML",
+            "DL",
+            "XAI"
+          ]
+        },
+        {
+          "title": "Research Assistant",
+          "organization": "Deakin University",
+          "period": "Oct. 01, 2023 – Dec. 20, 2025",
+          "details": "Contributed to phases of a healthcare AI project involving generative AI feasibility for ECG-based cardiovascular disorder detection and security/risk assessment for agentic AI-based healthcare platforms.",
+          "tags": [
+            "Research Assistant",
+            "GenAI",
+            "Agentic AI",
+            "ECG",
+            "Healthcare Security"
+          ]
+        },
+        {
+          "title": "Graduate Researcher (MRes Student)",
+          "organization": "Deakin University",
+          "period": "Feb. 21, 2020 – Oct. 05, 2022",
+          "details": "Applied machine-learning methods for EEG channel optimisation and epileptic seizure detection, including single/multi-channel EEG analysis, event detection, and factor analysis for real-world seizure detection systems.",
+          "tags": [
+            "MRes Research",
+            "EEG",
+            "Epilepsy",
+            "Feature Engineering"
+          ]
+        },
+        {
+          "title": "Research Assistant",
+          "organization": "Deakin University / Monash University / Alfred Health collaboration",
+          "period": "Aug. 01, 2020 – Sep. 30, 2022",
+          "details": "Worked on epileptic seizure detection in ICU settings, including data preprocessing, post-processing, ML/DL model evaluation, testing, and visualisation.",
+          "tags": [
+            "ICU EEG",
+            "Clinical AI",
+            "Monash University",
+            "Alfred Health"
+          ]
+        },
+        {
+          "title": "Research Assistant",
+          "organization": "Monash University and AETMOS Australia collaboration",
+          "period": "Mar. 01, 2022 – Sep. 30, 2022",
+          "details": "Worked on indoor air-temperature and air-quality prediction using meteorological and traffic data, investigating environmental-health implications with deep-learning methods.",
+          "tags": [
+            "Air Quality",
+            "AETMOS",
+            "Monash University",
+            "Deep Learning"
+          ]
+        },
+        {
+          "title": "Research Supervisor",
+          "organization": "Hajee Mohammad Danesh Science and Technology University",
+          "period": "Sep. 01, 2014 – Jan. 10, 2025",
+          "details": "Conducted academic research and supervised undergraduate research projects in computer science, applied ML, health informatics, and software-oriented research topics.",
+          "tags": [
+            "Research Supervision",
+            "Teaching",
+            "Applied ML"
+          ]
+        },
+        {
+          "title": "Digital Research Trainer",
+          "organization": "Intersect Australia",
+          "period": "Mar. 01, 2023 – Present",
+          "details": "Provides programming and machine-learning training for research students and researchers across topics including Python, data manipulation/visualisation, and ML regression, classification, and unsupervised learning.",
+          "tags": [
+            "Training",
+            "Python",
+            "Machine Learning",
+            "Research Skills"
+          ]
+        },
+        {
+          "title": "Graduate Research Teaching Fellow",
+          "organization": "Deakin University",
+          "period": "Feb. 20, 2025 – Present",
+          "details": "Assists graduate IT teaching and assessment in machine learning, analytics, database, security, and privacy subjects.",
+          "tags": [
+            "Teaching",
+            "Machine Learning",
+            "Assessment"
+          ]
+        },
+        {
+          "title": "Sessional Academic Staff",
+          "organization": "Deakin University",
+          "period": "Feb. 20, 2020 – Jun. 31, 2025",
+          "details": "Supported graduate IT courses including machine learning, business intelligence, machine learning in business, marketing analytics, and programming-related subjects.",
+          "tags": [
+            "Teaching",
+            "Course Assistance",
+            "Student Support"
+          ]
+        },
+        {
+          "title": "Assistant Professor",
+          "organization": "Hajee Mohammad Danesh Science and Technology University",
+          "period": "Sep. 01, 2017 – Present",
+          "details": "Conducted undergraduate CSE teaching, sessionals, assessment, research, and supervision; on leave for higher studies since February 2020.",
+          "tags": [
+            "Assistant Professor",
+            "CSE",
+            "Teaching",
+            "Research"
+          ]
+        },
+        {
+          "title": "Lecturer",
+          "organization": "Hajee Mohammad Danesh Science and Technology University",
+          "period": "Sep. 01, 2014 – Aug. 31, 2017",
+          "details": "Conducted undergraduate CSE courses and sessionals, including programming, database management, and machine learning, with examination and research responsibilities.",
+          "tags": [
+            "Lecturer",
+            "CSE",
+            "Teaching"
+          ]
+        },
+        {
+          "title": "Senior Software Engineer & Project Manager",
+          "organization": "Advanced Apps Bangladesh (AAPBD) Ltd.",
+          "period": "Jan. 01, 2014 – Aug. 20, 2014",
+          "details": "Managed and developed mobile/web applications, including iOS application design, development, testing, client management, team training, and involvement in 50+ apps.",
+          "tags": [
+            "Software Engineering",
+            "Project Management",
+            "iOS",
+            "Web Apps"
+          ]
+        },
+        {
+          "title": "Senior Software Engineer",
+          "organization": "DROID Bangladesh (AAPBD) Ltd.",
+          "period": "May. 01, 2012 – Dec. 31, 2013",
+          "details": "Designed, developed, implemented, tested, and supported iOS applications for company clients, including training new members.",
+          "tags": [
+            "iOS Development",
+            "Software Engineering",
+            "Team Training"
+          ]
+        },
+        {
+          "title": "Junior Programmer",
+          "organization": "Kento Studios Ltd.",
+          "period": "Feb. 01, 2012 – May. 31, 2012",
+          "details": "Developed and designed iOS applications and games, including implementation, testing, and game design tasks.",
+          "tags": [
+            "Junior Programmer",
+            "iOS",
+            "Game Design"
+          ]
+        }
+      ],
+      "projectIds": [
+        "emran-sleep-hypnogram-aging",
+        "emran-genai-ecg-healthcare",
+        "emran-icu-eeg-seizure-detection",
+        "emran-air-quality-deep-ensemble",
+        "emran-ddos-network-security",
+        "emran-blood-sodium-nirs",
+        "emran-j2me-dictionary-search"
+      ],
+      "publicationIds": [
+        "emran-2024-rsos-chb-mit",
+        "emran-2023-urban-climate-air-temp",
+        "emran-2021-ijmsc-lsb-steganography",
+        "emran-2020-ijta-sign-language",
+        "emran-2020-ijcsse-cryptographic-algorithm",
+        "emran-2017-ijcnis-ternary-sequence",
+        "emran-2017-ijaset-smart-campus-iot",
+        "emran-2017-ajer-text-summarization",
+        "emran-2023-iccit-mdd-eeg-feature-optimization",
+        "emran-2023-eict-mdd-correlation-features",
+        "emran-2021-embc-entropy-seizure-detection",
+        "emran-2018-icaeee-sign-language-hog",
+        "emran-2014-iciev-indexed-binary-search",
+        "emran-2021-aes-icu-seizure-poster"
+      ],
+      "certificatesCourses": [
+        {
+          "title": "AI Agents Intensive Course with Google (5-Day)",
+          "provider": "Google Kaggle",
+          "year": "2025",
+          "details": "Intensive AI agents course focused on agentic AI concepts and workflows.",
+          "tags": [
+            "AI Agents",
+            "GenAI",
+            "Kaggle"
+          ]
+        },
+        {
+          "title": "Generative AI Nanodegree",
+          "provider": "Bertelsmann / Udacity",
+          "year": "2024",
+          "details": "Nanodegree program supported by the Bertelsmann Next Generation Tech Booster Scholarship.",
+          "tags": [
+            "Generative AI",
+            "Udacity",
+            "Scholarship"
+          ]
+        },
+        {
+          "title": "Building Agents with Copilot Studio",
+          "provider": "Akkodis / Microsoft",
+          "year": "2024",
+          "details": "AI agent development training using Microsoft Copilot Studio.",
+          "tags": [
+            "AI Agents",
+            "Copilot Studio",
+            "Microsoft"
+          ]
+        },
+        {
+          "title": "AWS Machine Learning Fundamentals",
+          "provider": "AWS / Udacity",
+          "year": "2024",
+          "details": "AWS machine-learning nanodegree/program through the AWS AI/ML Scholarship pathway.",
+          "tags": [
+            "AWS",
+            "Machine Learning",
+            "Udacity"
+          ]
+        },
+        {
+          "title": "AI Programming with Python",
+          "provider": "AWS / Udacity",
+          "year": "2023",
+          "details": "AI programming and Python-based ML training through AWS AI/ML Scholarship Phase 1.",
+          "tags": [
+            "Python",
+            "Machine Learning",
+            "AWS"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure AI Fundamentals",
+          "provider": "Microsoft",
+          "year": "2023",
+          "details": "AI-900 certification covering Azure AI fundamentals.",
+          "tags": [
+            "Azure",
+            "AI-900",
+            "Cloud AI"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Data Fundamentals",
+          "provider": "Microsoft",
+          "year": "2023",
+          "details": "DP-900 certification covering Azure data fundamentals.",
+          "tags": [
+            "Azure",
+            "DP-900",
+            "Data"
+          ]
+        },
+        {
+          "title": "BCI & Neurotechnology Spring School",
+          "provider": "g.tec",
+          "year": "2022",
+          "details": "Recognition/training in BCI and neurotechnology.",
+          "tags": [
+            "BCI",
+            "Neurotechnology",
+            "EEG"
+          ]
+        },
+        {
+          "title": "IEEE EMBS Summer Camp",
+          "provider": "IEEE EMBS",
+          "year": "2022",
+          "details": "Summer camp participation related to engineering in medicine and biology.",
+          "tags": [
+            "IEEE EMBS",
+            "Biomedical Engineering"
+          ]
+        },
+        {
+          "title": "Critical Thinking",
+          "provider": "LinkedIn Learning",
+          "year": "",
+          "details": "Professional development in problem solving, decision-making, and critical thinking.",
+          "tags": [
+            "Soft Skills",
+            "Critical Thinking"
+          ]
+        },
+        {
+          "title": "ATN Frontiers – Digital Futures",
+          "provider": "ATN Frontiers",
+          "year": "",
+          "details": "Applied and advanced data analytics professional-development program.",
+          "tags": [
+            "Data Analytics",
+            "Digital Futures"
+          ]
+        },
+        {
+          "title": "ATN Frontiers – The Future of Data",
+          "provider": "ATN Frontiers",
+          "year": "",
+          "details": "Data analytics concepts and practice program.",
+          "tags": [
+            "Data Analytics",
+            "Future of Data"
+          ]
+        }
+      ],
+      "extracurricularActivities": [
+        {
+          "title": "IEEE Student Member",
+          "organization": "IEEE",
+          "period": "Jul. 01, 2022 – Present",
+          "details": "Student member of IEEE, supporting engagement with technical and professional computing communities.",
+          "tags": [
+            "IEEE",
+            "Professional Membership"
+          ]
+        },
+        {
+          "title": "IEEE EMBS Student Member",
+          "organization": "IEEE Engineering in Medicine and Biology Society",
+          "period": "Jul. 01, 2022 – Present",
+          "details": "Engagement with biomedical engineering and health-technology communities.",
+          "tags": [
+            "IEEE EMBS",
+            "Biomedical Engineering"
+          ]
+        },
+        {
+          "title": "IEEE Young Professionals Member",
+          "organization": "IEEE",
+          "period": "Jul. 01, 2022 – Present",
+          "details": "Member of IEEE Young Professionals affinity group.",
+          "tags": [
+            "IEEE",
+            "Young Professionals"
+          ]
+        },
+        {
+          "title": "ACS Associate Member",
+          "organization": "Australian Computer Society",
+          "period": "Aug. 01, 2023 – Nov. 30, 2024",
+          "details": "Associate membership in Australia’s ICT professional association.",
+          "tags": [
+            "ACS",
+            "Professional Membership"
+          ]
+        },
+        {
+          "title": "Advisor and Founding Member",
+          "organization": "Programmers Arena, HSTU",
+          "period": "Sep. 01, 2014 – Present",
+          "details": "Supports competitive programming and software-development skill-building among students.",
+          "tags": [
+            "Programming Contest",
+            "Mentoring"
+          ]
+        },
+        {
+          "title": "Advisor",
+          "organization": "CSE Club, HSTU",
+          "period": "Sep. 01, 2014 – Present",
+          "details": "Guides students in academic, technical, workshop, and departmental co-curricular activities.",
+          "tags": [
+            "Student Mentoring",
+            "CSE Club"
+          ]
+        },
+        {
+          "title": "Section Leader – Code in Place",
+          "organization": "Stanford Online",
+          "period": "Apr. 01, 2023 – Jun. 30, 2024",
+          "details": "Facilitated Python learning through Stanford’s global volunteer-driven Code in Place program.",
+          "tags": [
+            "Volunteering",
+            "Python Teaching"
+          ]
+        },
+        {
+          "title": "Scientific Journal Reviewer",
+          "organization": "EAMBES",
+          "period": "Aug. 01, 2023 – Present",
+          "details": "Contributes to peer review for scientific manuscripts associated with the European Alliance of Medical and Biological Engineering and Science.",
+          "tags": [
+            "Peer Review",
+            "Scientific Service"
+          ]
+        },
+        {
+          "title": "Seminar Speaker",
+          "organization": "CSE Club, HSTU",
+          "period": "Sep. 12, 2022",
+          "details": "Presented on higher studies abroad, the journey to Australia, and research experiences.",
+          "tags": [
+            "Seminar",
+            "Mentoring"
+          ]
+        },
+        {
+          "title": "Keynote Speaker",
+          "organization": "AFCSE, HSTU",
+          "period": "Apr. 06, 2015",
+          "details": "Delivered a keynote on career development and the future of mobile app development in Bangladesh.",
+          "tags": [
+            "Keynote",
+            "Career Development"
+          ]
+        }
+      ],
+      "cvNotes": []
+    },
+    {
+      "memberId": "research-collaborators",
+      "headline": "Collaborative research contributions across AI, biomedical computing, data science, and applied research.",
+      "academicInfo": [
+        {
+          "title": "Collaborator academic profile",
+          "institution": "To be specified",
+          "period": "",
+          "details": "Add collaborator degree, institution, research area, supervision role, and academic affiliation details."
+        }
+      ],
+      "professionalExperience": [
+        {
+          "title": "Research collaboration",
+          "organization": "HUMACH Research",
+          "period": "Current / Open",
+          "details": "Supports literature review, experiment design, dataset interpretation, analysis, manuscript writing, and interdisciplinary research translation."
+        }
+      ],
+      "projectIds": [
+        "ai-health-signal-analysis",
+        "human-ai-collaboration-studies",
+        "computer-vision-health-screening"
+      ],
+      "publicationIds": [
+        "biomedical-ai-signal-review",
+        "sleep-disorder-transition-features",
+        "genai-education-computing"
+      ],
+      "certificatesCourses": [
+        {
+          "title": "Research methods / technical training",
+          "provider": "To be specified",
+          "year": "",
+          "details": "Add verified courses, workshops, methods training, or professional certificates."
+        }
+      ],
+      "extracurricularActivities": [
+        {
+          "title": "Peer review, mentoring, seminar, or outreach activity",
+          "organization": "To be specified",
+          "period": "",
+          "details": "Add relevant academic service, mentoring, workshops, or community activity."
+        }
+      ],
+      "cvNotes": []
+    },
+    {
+      "memberId": "development-contributors",
+      "headline": "Software, prototype, dashboard, documentation, and research-tool development contributions.",
+      "academicInfo": [
+        {
+          "title": "Technical background",
+          "institution": "To be specified",
+          "period": "",
+          "details": "Add study program, degree, bootcamp, training, or technical background for the contributor."
+        }
+      ],
+      "professionalExperience": [
+        {
+          "title": "Development contributor",
+          "organization": "HUMACH Research",
+          "period": "Current / Recruiting",
+          "details": "Builds dashboards, web interfaces, reusable data-loader components, research automation tools, and project documentation."
+        }
+      ],
+      "projectIds": [
+        "research-dashboard-platform",
+        "open-research-data-pipeline",
+        "ai-research-assistant-workflows"
+      ],
+      "publicationIds": [
+        "research-dashboard-software-paper",
+        "agentic-ai-research-workflows",
+        "humach-dataset-template"
+      ],
+      "certificatesCourses": [
+        {
+          "title": "Web/software development courses",
+          "provider": "To be specified",
+          "year": "",
+          "details": "Add frontend, backend, database, cloud, AI engineering, or software engineering certificates."
+        }
+      ],
+      "extracurricularActivities": [
+        {
+          "title": "Open-source or portfolio contribution",
+          "organization": "To be specified",
+          "period": "",
+          "details": "Add GitHub projects, hackathons, club activities, volunteer work, or technical communities."
+        }
+      ],
+      "cvNotes": []
+    },
+    {
+      "memberId": "research-interns",
+      "headline": "Student research training through reading, dataset preparation, experiments, analysis, and writing.",
+      "academicInfo": [
+        {
+          "title": "Student academic information",
+          "institution": "To be specified",
+          "period": "",
+          "details": "Add program, institution, year/level, thesis topic, and relevant coursework."
+        }
+      ],
+      "professionalExperience": [
+        {
+          "title": "Research intern",
+          "organization": "HUMACH Research",
+          "period": "Open / Supervised",
+          "details": "Contributes to annotated bibliographies, dataset summaries, model benchmarking, result interpretation, and research reports."
+        }
+      ],
+      "projectIds": [
+        "student-project-incubator",
+        "ai-health-signal-analysis",
+        "human-ai-collaboration-studies"
+      ],
+      "publicationIds": [
+        "student-intern-output-series",
+        "sleep-disorder-transition-features",
+        "genai-education-computing"
+      ],
+      "certificatesCourses": [
+        {
+          "title": "Research methods or ML/data analysis training",
+          "provider": "To be specified",
+          "year": "",
+          "details": "Add completed courses, certificates, workshops, or training milestones."
+        }
+      ],
+      "extracurricularActivities": [
+        {
+          "title": "Student leadership, clubs, competitions, or volunteering",
+          "organization": "To be specified",
+          "period": "",
+          "details": "Add relevant extracurricular work that supports the intern profile."
+        }
+      ],
+      "cvNotes": []
+    },
+    {
+      "memberId": "development-interns",
+      "headline": "Student development pathway for frontend pages, data-driven components, UI improvements, and documentation.",
+      "academicInfo": [
+        {
+          "title": "Student academic information",
+          "institution": "To be specified",
+          "period": "",
+          "details": "Add program, institution, year/level, technical coursework, and project interests."
+        }
+      ],
+      "professionalExperience": [
+        {
+          "title": "Development intern",
+          "organization": "HUMACH Research",
+          "period": "Open / Supervised",
+          "details": "Contributes to website modules, project cards, publication/team directories, UI improvements, and implementation notes."
+        }
+      ],
+      "projectIds": [
+        "research-dashboard-platform",
+        "student-project-incubator",
+        "open-research-data-pipeline"
+      ],
+      "publicationIds": [
+        "student-intern-output-series",
+        "research-dashboard-software-paper",
+        "humach-dataset-template"
+      ],
+      "certificatesCourses": [
+        {
+          "title": "Programming, web development, or software tools training",
+          "provider": "To be specified",
+          "year": "",
+          "details": "Add HTML, CSS, JavaScript, Python, Git, database, UI/UX, or deployment training."
+        }
+      ],
+      "extracurricularActivities": [
+        {
+          "title": "Portfolio, club, hackathon, or volunteer development activity",
+          "organization": "To be specified",
+          "period": "",
+          "details": "Add relevant activities and portfolio contributions."
+        }
+      ],
+      "cvNotes": []
+    },
+    {
+      "memberId": "future-alumni",
+      "headline": "Completed contributor records, project legacy, mentoring, and alumni visibility.",
+      "academicInfo": [
+        {
+          "title": "Alumni academic background",
+          "institution": "To be specified",
+          "period": "",
+          "details": "Add completed program, institution, thesis/project title, and graduation/completion information."
+        }
+      ],
+      "professionalExperience": [
+        {
+          "title": "Completed HUMACH contribution",
+          "organization": "HUMACH Research",
+          "period": "To be specified",
+          "details": "Summarise completed internship, project contribution, development work, publication support, or mentoring activity."
+        }
+      ],
+      "projectIds": [
+        "student-project-incubator",
+        "research-dashboard-platform"
+      ],
+      "publicationIds": [
+        "student-intern-output-series"
+      ],
+      "certificatesCourses": [
+        {
+          "title": "Completion certificate or training record",
+          "provider": "HUMACH Research / To be specified",
+          "year": "",
+          "details": "Add certificate, course, workshop, or contribution-recognition details."
+        }
+      ],
+      "extracurricularActivities": [
+        {
+          "title": "Mentoring or alumni contribution",
+          "organization": "HUMACH Research",
+          "period": "Future",
+          "details": "Add mentoring, outreach, alumni talks, supervision support, or community contributions."
+        }
+      ],
+      "cvNotes": []
+    }
+  ]
+}

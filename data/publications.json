@@ -1,0 +1,674 @@
+{
+  "section": {
+    "title": "Publications",
+    "subtitle": "Research Outputs and Scholarly Communication",
+    "description": "A structured publication directory for journal articles, conference papers, preprints, technical reports, software papers, datasets, and student outputs. Current entries are planning-ready placeholders and can be replaced with verified metadata, DOI links, paper URLs, code links, and related project links."
+  },
+  "items": [
+    {
+      "id": "sleep-disorder-transition-features",
+      "title": "Hypnogram Transition Features for Sleep Disorder Screening",
+      "authors": [
+        "HUMACH Research Team"
+      ],
+      "year": "Planned",
+      "type": "Journal Article",
+      "venue": "Target journal to be confirmed",
+      "status": "Draft Target",
+      "statusClass": "planned",
+      "summary": "A planned research article template for machine-learning-based sleep disorder screening using stage-transition and temporal hypnogram features.",
+      "abstract": "This output can later document feature design, model evaluation, age-aware analysis, and clinical interpretation for sleep-stage-based disorder detection.",
+      "tags": [
+        "Health AI",
+        "Sleep Analysis",
+        "Machine Learning",
+        "Biomedical Computing"
+      ],
+      "relatedProjects": [
+        "AI-Based Health Signal Intelligence",
+        "Interpretable ML Pipelines"
+      ],
+      "links": [
+        {
+          "label": "Related Projects",
+          "url": "projects.html"
+        },
+        {
+          "label": "Research Areas",
+          "url": "research.html"
+        }
+      ]
+    },
+    {
+      "id": "biomedical-ai-signal-review",
+      "title": "Human-Centered Biomedical AI for Signal-Based Decision Support",
+      "authors": [
+        "HUMACH Research Team",
+        "Future Collaborators"
+      ],
+      "year": "Planned",
+      "type": "Review Article",
+      "venue": "Target venue to be confirmed",
+      "status": "Concept",
+      "statusClass": "emerging",
+      "summary": "A planned review direction covering biomedical signal processing, explainable AI, evaluation design, and responsible health-focused computing.",
+      "abstract": "This article can synthesize methods across physiological signals, model validation, practical deployment constraints, and human-centered decision-support design.",
+      "tags": [
+        "Biomedical AI",
+        "Signal Processing",
+        "Explainable AI",
+        "Health"
+      ],
+      "relatedProjects": [
+        "AI-Based Health Signal Intelligence"
+      ],
+      "links": []
+    },
+    {
+      "id": "research-dashboard-software-paper",
+      "title": "Reusable Dashboards for Research Data Exploration and Reporting",
+      "authors": [
+        "HUMACH Development Contributors"
+      ],
+      "year": "Planned",
+      "type": "Software Paper",
+      "venue": "Software / systems venue to be confirmed",
+      "status": "Prototype Output",
+      "statusClass": "active",
+      "summary": "A software-output template for dashboards that help researchers inspect datasets, experiments, metrics, plots, and project progress.",
+      "abstract": "This output can describe design decisions, data-loading patterns, visualization components, and reproducibility benefits for research dashboard development.",
+      "tags": [
+        "Research Software",
+        "Dashboards",
+        "Data Visualization",
+        "Development"
+      ],
+      "relatedProjects": [
+        "Research Automation and Dashboard Systems"
+      ],
+      "links": [
+        {
+          "label": "Development Page",
+          "url": "development.html"
+        }
+      ]
+    },
+    {
+      "id": "genai-education-computing",
+      "title": "Generative AI and Human-Centered Computing for Education and Training",
+      "authors": [
+        "HUMACH Research Team"
+      ],
+      "year": "Planned",
+      "type": "Conference Paper",
+      "venue": "Education / AI conference to be confirmed",
+      "status": "Idea Bank",
+      "statusClass": "planned",
+      "summary": "A planned conference-paper direction on AI-assisted learning, student project supervision, research training, and responsible use of generative AI.",
+      "abstract": "This output can examine how human-centered AI tools support skill development, internship pathways, feedback, and project-based learning.",
+      "tags": [
+        "Generative AI",
+        "Education",
+        "Human-Centered AI",
+        "Training"
+      ],
+      "relatedProjects": [
+        "AI for Education and Research Training"
+      ],
+      "links": []
+    },
+    {
+      "id": "agentic-ai-research-workflows",
+      "title": "Agentic AI Workflows for Literature Review, Experiment Tracking, and Research Automation",
+      "authors": [
+        "HUMACH Research Team",
+        "Development Contributors"
+      ],
+      "year": "Planned",
+      "type": "Technical Report",
+      "venue": "HUMACH Technical Report Series",
+      "status": "Planned Report",
+      "statusClass": "planned",
+      "summary": "A technical report template for AI-assisted research workflows, automation tools, structured project documentation, and reproducible reporting.",
+      "abstract": "This report can document pipeline design, automation constraints, evaluation checks, and safe human-in-the-loop practices for research-oriented AI agents.",
+      "tags": [
+        "Agentic AI",
+        "Research Automation",
+        "Technical Report",
+        "Development"
+      ],
+      "relatedProjects": [
+        "Research Automation and Dashboard Systems"
+      ],
+      "links": []
+    },
+    {
+      "id": "humach-dataset-template",
+      "title": "Dataset Documentation Template for HUMACH Research Projects",
+      "authors": [
+        "HUMACH Research Team"
+      ],
+      "year": "Template",
+      "type": "Dataset Paper",
+      "venue": "Dataset / documentation output",
+      "status": "Template",
+      "statusClass": "template",
+      "summary": "A reusable data-publication entry for future curated datasets, metadata dictionaries, preprocessing documentation, and reproducibility materials.",
+      "abstract": "This template can later describe dataset origin, preprocessing steps, ethical considerations, variable definitions, and recommended baseline experiments.",
+      "tags": [
+        "Dataset",
+        "Documentation",
+        "Reproducibility",
+        "Open Science"
+      ],
+      "relatedProjects": [
+        "Interpretable ML Pipelines"
+      ],
+      "links": []
+    },
+    {
+      "id": "student-intern-output-series",
+      "title": "Student and Intern Research Output Series",
+      "authors": [
+        "HUMACH Student Contributors",
+        "HUMACH Mentors"
+      ],
+      "year": "Ongoing",
+      "type": "Student Output",
+      "venue": "HUMACH internal and public outputs",
+      "status": "Open Pathway",
+      "statusClass": "open",
+      "summary": "A publication-track placeholder for internship reports, poster abstracts, portfolio projects, reproducible notebooks, and supervised student manuscripts.",
+      "abstract": "This output stream can help students convert internship milestones into visible artifacts such as posters, reports, demos, code repositories, and manuscript drafts.",
+      "tags": [
+        "Internship",
+        "Training",
+        "Student Projects",
+        "Mentoring"
+      ],
+      "relatedProjects": [
+        "AI for Education and Research Training"
+      ],
+      "links": [
+        {
+          "label": "Opportunities",
+          "url": "opportunities.html"
+        }
+      ]
+    },
+    {
+      "id": "emran-2024-rsos-chb-mit",
+      "title": "Epileptic seizure detection using CHB-MIT dataset: The overlooked perspectives",
+      "authors": [
+        "Emran Ali",
+        "M. Angelova",
+        "C. Karmakar"
+      ],
+      "year": "2024",
+      "type": "Journal Article",
+      "venue": "Royal Society Open Science, 11(6):230601",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Addresses real-world seizure event detection concerns including continuous EEG imbalance, cross-subject variability, and event-level post-processing.",
+      "tags": [
+        "EEG",
+        "Epilepsy",
+        "Machine Learning",
+        "Event Detection"
+      ],
+      "relatedProjects": [
+        "emran-icu-eeg-seizure-detection"
+      ],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2023-urban-climate-air-temp",
+      "title": "Sensor-based indoor air temperature prediction using deep ensemble machine learning: An Australian urban environment case study",
+      "authors": [
+        "W. Yu",
+        "B. Nakisa",
+        "Emran Ali",
+        "S. W. Loke",
+        "S. Stevanovic",
+        "Y. Guo"
+      ],
+      "year": "2023",
+      "type": "Journal Article",
+      "venue": "Urban Climate, 51:101599",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Deep ensemble machine-learning study for sensor-based indoor temperature forecasting in an Australian urban environment.",
+      "tags": [
+        "Air Quality",
+        "Deep Ensemble Learning",
+        "Environmental Health",
+        "Forecasting"
+      ],
+      "relatedProjects": [
+        "emran-air-quality-deep-ensemble"
+      ],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2021-ijmsc-lsb-steganography",
+      "title": "A LSB Based Image Steganography Using Random Pixel and Bit Selection for High Payload",
+      "authors": [
+        "U. A. Ehsan Ali",
+        "Emran Ali",
+        "M. Sohrawordi",
+        "M. N. Sultan"
+      ],
+      "year": "2021",
+      "type": "Journal Article",
+      "venue": "International Journal of Mathematical Sciences and Computing, 7(3):24-31",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Image steganography method using random pixel and bit selection for secure high-payload data hiding.",
+      "tags": [
+        "Security",
+        "Steganography",
+        "Image Processing"
+      ],
+      "relatedProjects": [],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2020-ijta-sign-language",
+      "title": "Enhancement of single-handed Bengali sign language recognition based on HOG features",
+      "authors": [
+        "T. Tabassum",
+        "I. Mahmud",
+        "M. D. Uddin",
+        "Emran Ali",
+        "M. I. Afjal",
+        "A. M. Nitu"
+      ],
+      "year": "2020",
+      "type": "Journal Article",
+      "venue": "Journal of Theoretical and Applied Information Technology, 98(5):743-756",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Bengali sign-language recognition using image preprocessing, segmentation, HOG features, and KNN classification.",
+      "tags": [
+        "Computer Vision",
+        "HOG",
+        "Sign Language",
+        "Pattern Recognition"
+      ],
+      "relatedProjects": [],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2020-ijcsse-cryptographic-algorithm",
+      "title": "Mapping Character Position Based Cryptographic algorithm with Numerical Conversions",
+      "authors": [
+        "M. Moon",
+        "A. T. Tanim",
+        "M. Z. Shoykot",
+        "M. N. Sultan",
+        "U. M. Ali",
+        "Emran Ali"
+      ],
+      "year": "2020",
+      "type": "Journal Article",
+      "venue": "International Journal of Computer Science and Software Engineering, 9(3):56-59",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Cryptographic algorithm using character position mapping and numerical conversions for data-security applications.",
+      "tags": [
+        "Cryptography",
+        "Security",
+        "Algorithms"
+      ],
+      "relatedProjects": [],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2017-ijcnis-ternary-sequence",
+      "title": "Pseudo random ternary sequence and its autocorrelation property over finite field",
+      "authors": [
+        "M. A. Ali",
+        "Emran Ali",
+        "M. A. Habib",
+        "M. Nadim",
+        "T. Kusaka",
+        "Y. Nogami"
+      ],
+      "year": "2017",
+      "type": "Journal Article",
+      "venue": "International Journal of Computer Network and Information Security, 11(9):54",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Mathematical analysis of pseudo-random ternary sequence generation and autocorrelation properties over finite fields.",
+      "tags": [
+        "Cryptography",
+        "Finite Field",
+        "Sequences",
+        "Mathematics"
+      ],
+      "relatedProjects": [],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2017-ijaset-smart-campus-iot",
+      "title": "Smart Campus Using IoT with Bangladesh Perspective: A Possibility and Limitation",
+      "authors": [
+        "M. N. Sultan",
+        "Emran Ali",
+        "M. A. Ali",
+        "M. Nadim",
+        "M. A. Habib"
+      ],
+      "year": "2017",
+      "type": "Journal Article",
+      "venue": "International Journal of Research in Applied Science and Engineering Technologies, 8:1681-1690",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Explores IoT-enabled smart campus opportunities and limitations in the Bangladesh/HSTU context.",
+      "tags": [
+        "IoT",
+        "Smart Campus",
+        "Bangladesh",
+        "Applied Computing"
+      ],
+      "relatedProjects": [],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2017-ajer-text-summarization",
+      "title": "Study of Abstractive Text Summarization Techniques",
+      "authors": [
+        "S. Yeasmin",
+        "P. B. Tumpa",
+        "A. M. Nitu",
+        "M. P. Uddin",
+        "Emran Ali",
+        "M. I. Afjal"
+      ],
+      "year": "2017",
+      "type": "Journal Article",
+      "venue": "American Journal of Engineering Research, 6(8):253-260",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Survey and comparative study of abstractive text-summarization techniques with attention to Bengali text summarization challenges.",
+      "tags": [
+        "NLP",
+        "Text Summarization",
+        "Bengali NLP"
+      ],
+      "relatedProjects": [],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2023-iccit-mdd-eeg-feature-optimization",
+      "title": "An Efficient Feature Optimization Approach with Machine Learning for Detection of Major Depressive Disorder Using EEG Signal",
+      "authors": [
+        "A. R. Bhuyain",
+        "J. Ferdouse",
+        "M. U. Babar",
+        "M. Sohrawordi",
+        "M. R. Islam",
+        "Emran Ali"
+      ],
+      "year": "2023",
+      "type": "Conference Paper",
+      "venue": "26th International Conference on Computer and Information Technology (ICCIT), IEEE",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Feature optimisation and machine-learning approach for major depressive disorder detection from EEG signals.",
+      "tags": [
+        "EEG",
+        "MDD",
+        "Feature Optimisation",
+        "Machine Learning"
+      ],
+      "relatedProjects": [],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2023-eict-mdd-correlation-features",
+      "title": "Optimal Feature Identification and Major Depressive Disorder Prediction through Correlation-Based Machine Learning Approach",
+      "authors": [
+        "M. U. Babar",
+        "A. R. Bhuyain",
+        "J. Ferdouse",
+        "M. Sohrawordi",
+        "Emran Ali"
+      ],
+      "year": "2023",
+      "type": "Conference Paper",
+      "venue": "6th International Conference on Electrical Information and Communication Technology (EICT), IEEE",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Correlation-based feature identification for MDD prediction using EEG features and machine-learning models.",
+      "tags": [
+        "EEG",
+        "MDD",
+        "Correlation Analysis",
+        "Machine Learning"
+      ],
+      "relatedProjects": [],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2021-embc-entropy-seizure-detection",
+      "title": "Performance analysis of entropy methods in detecting epileptic seizure from surface Electroencephalograms",
+      "authors": [
+        "Emran Ali",
+        "R. K. Udhayakumar",
+        "M. Angelova",
+        "C. Karmakar"
+      ],
+      "year": "2021",
+      "type": "Conference Paper",
+      "venue": "43rd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC), pp. 1082-1085",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Compares entropy features for seizure detection from surface EEG across channels and subjects.",
+      "tags": [
+        "EEG",
+        "Entropy",
+        "Epilepsy",
+        "Signal Processing"
+      ],
+      "relatedProjects": [
+        "emran-icu-eeg-seizure-detection"
+      ],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2018-icaeee-sign-language-hog",
+      "title": "Efficient Noise Reduction and HOG Feature Extraction for Sign Language Recognition",
+      "authors": [
+        "I. Mahmud",
+        "T. Tabassum",
+        "M. P. Uddin",
+        "Emran Ali",
+        "A. M. Nitu",
+        "M. I. Afjal"
+      ],
+      "year": "2018",
+      "type": "Conference Paper",
+      "venue": "International Conference on Advancement in Electrical and Electronic Engineering (ICAEEE), IEEE",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Image-processing and HOG-feature extraction method for sign-language recognition.",
+      "tags": [
+        "Computer Vision",
+        "HOG",
+        "Sign Language"
+      ],
+      "relatedProjects": [],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2014-iciev-indexed-binary-search",
+      "title": "Indexed Binary Search based efficient search generator for J2ME English to English dictionary",
+      "authors": [
+        "M. P. Uddin",
+        "Emran Ali",
+        "M. A. Marjan",
+        "M. A. Al Mamun"
+      ],
+      "year": "2014",
+      "type": "Conference Paper",
+      "venue": "International Conference on Informatics, Electronics & Vision (ICIEV), IEEE",
+      "status": "Published",
+      "statusClass": "published",
+      "summary": "Indexed binary-search method for efficient J2ME dictionary lookup on mobile devices.",
+      "tags": [
+        "Algorithms",
+        "Mobile Computing",
+        "J2ME"
+      ],
+      "relatedProjects": [
+        "emran-j2me-dictionary-search"
+      ],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-2021-aes-icu-seizure-poster",
+      "title": "Deep Learning Model for Detection of Electrographic Seizures from continuous EEG in ICU patients",
+      "authors": [
+        "A. Habib",
+        "C. Pham",
+        "Emran Ali",
+        "D. Thom",
+        "J. Laing",
+        "C. Karmakar",
+        "P. Kwan",
+        "T. O’Brien"
+      ],
+      "year": "2021",
+      "type": "Poster Presentation",
+      "venue": "American Epilepsy Society Annual Conference",
+      "status": "Presented",
+      "statusClass": "published",
+      "summary": "Proof-of-concept poster on CNN-based seizure detection from continuous ICU EEG recordings.",
+      "tags": [
+        "ICU EEG",
+        "Deep Learning",
+        "Epilepsy",
+        "Clinical AI"
+      ],
+      "relatedProjects": [
+        "emran-icu-eeg-seizure-detection"
+      ],
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "Journal Articles",
+      "icon": "bi bi-journal-richtext",
+      "summary": "Peer-reviewed research manuscripts with full methodology, experiments, results, and interpretation."
+    },
+    {
+      "name": "Conference Papers",
+      "icon": "bi bi-easel2",
+      "summary": "Focused contributions suitable for presentation, student research, emerging ideas, and rapid feedback."
+    },
+    {
+      "name": "Preprints and Reports",
+      "icon": "bi bi-file-earmark-text",
+      "summary": "Early manuscripts, technical reports, project notes, and reproducibility-focused documentation."
+    },
+    {
+      "name": "Software and Data Papers",
+      "icon": "bi bi-code-square",
+      "summary": "Outputs that document tools, dashboards, datasets, repositories, pipelines, and reusable research assets."
+    }
+  ],
+  "workflow": [
+    {
+      "step": "01",
+      "title": "Plan",
+      "summary": "Map each output to a research area, project, dataset, and expected contribution."
+    },
+    {
+      "step": "02",
+      "title": "Validate",
+      "summary": "Check experiments, evidence, evaluation metrics, figures, code, and reproducibility materials."
+    },
+    {
+      "step": "03",
+      "title": "Write",
+      "summary": "Prepare manuscript, report, software note, student output, or dataset documentation."
+    },
+    {
+      "step": "04",
+      "title": "Share",
+      "summary": "Add DOI, paper link, code link, project link, and public-facing summary when available."
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "section": {
+    "title": "Projects",
+    "subtitle": "Research, Development, and Training Projects",
+    "description": "Current and planned HUMACH project directions across research, software development, student training, publications, and collaboration."
+  },
+  "items": [
+    {
+      "id": "ai-health-signal-analysis",
+      "title": "AI-Based Health Signal Analysis",
+      "status": "Active Direction",
+      "statusClass": "active",
+      "category": "Healthcare AI",
+      "type": "Research",
+      "summary": "Machine learning and deep learning models for physiological, biomedical, and health-related signal interpretation.",
+      "tags": [
+        "Healthcare AI",
+        "Signal Processing",
+        "Research"
+      ],
+      "relatedResearch": [
+        "Biomedical & Health AI",
+        "Deep Learning & Multimodal AI"
+      ],
+      "outputs": [
+        "Experimental pipelines",
+        "Research articles",
+        "Student projects"
+      ],
+      "opportunity": "Research internship or thesis project",
+      "links": []
+    },
+    {
+      "id": "research-dashboard-platform",
+      "title": "Research Dashboard Platform",
+      "status": "Recruiting",
+      "statusClass": "recruiting",
+      "category": "Development",
+      "type": "Web System",
+      "summary": "A web-based system for managing datasets, experiments, results, papers, team outputs, and project progress.",
+      "tags": [
+        "Development",
+        "Dashboard",
+        "Web"
+      ],
+      "relatedResearch": [
+        "Software Engineering Research",
+        "Machine Learning & Data Science"
+      ],
+      "outputs": [
+        "Prototype dashboard",
+        "Documentation",
+        "GitHub repository"
+      ],
+      "opportunity": "Development internship",
+      "links": []
+    },
+    {
+      "id": "ai-research-assistant-workflows",
+      "title": "AI Research Assistant Workflows",
+      "status": "Concept",
+      "statusClass": "concept",
+      "category": "Generative AI",
+      "type": "Tooling",
+      "summary": "Responsible AI workflows for literature review, summarisation, coding support, research writing, and documentation.",
+      "tags": [
+        "GenAI",
+        "Agents",
+        "Research Tools"
+      ],
+      "relatedResearch": [
+        "NLP, Generative AI & Agents",
+        "Software Engineering Research"
+      ],
+      "outputs": [
+        "Workflow prototypes",
+        "Prompt libraries",
+        "Evaluation notes"
+      ],
+      "opportunity": "Research and development internship",
+      "links": []
+    },
+    {
+      "id": "student-project-incubator",
+      "title": "Student Project Incubator",
+      "status": "Recruiting",
+      "statusClass": "recruiting",
+      "category": "Training",
+      "type": "Internship",
+      "summary": "A structured path for students to join small research or development tasks and progress toward publishable or deployable outputs.",
+      "tags": [
+        "Internship",
+        "Training",
+        "Mentoring"
+      ],
+      "relatedResearch": [
+        "AI Education & Learning Technology",
+        "Human-Centered AI"
+      ],
+      "outputs": [
+        "Mini projects",
+        "Portfolio items",
+        "Technical reports"
+      ],
+      "opportunity": "Open to motivated students",
+      "links": []
+    },
+    {
+      "id": "health-education-ai-tools",
+      "title": "Health and Education AI Tools",
+      "status": "Planned",
+      "statusClass": "planned",
+      "category": "Applied AI",
+      "type": "Prototype",
+      "summary": "Human-centered AI prototypes for health education, learning support, decision guidance, and accessible digital services.",
+      "tags": [
+        "Applied AI",
+        "Education",
+        "Health"
+      ],
+      "relatedResearch": [
+        "Human-Centered AI",
+        "AI Education & Learning Technology"
+      ],
+      "outputs": [
+        "Interactive prototype",
+        "User evaluation",
+        "Case study"
+      ],
+      "opportunity": "Prototype-focused internship",
+      "links": []
+    },
+    {
+      "id": "open-research-data-pipeline",
+      "title": "Open Research Data Pipeline",
+      "status": "Concept",
+      "statusClass": "concept",
+      "category": "Data Science",
+      "type": "Infrastructure",
+      "summary": "Reusable data preparation, validation, experiment logging, and result summarisation workflows for AI research projects.",
+      "tags": [
+        "Data Science",
+        "Automation",
+        "Reproducibility"
+      ],
+      "relatedResearch": [
+        "Machine Learning & Data Science",
+        "Software Engineering Research"
+      ],
+      "outputs": [
+        "Reusable scripts",
+        "Templates",
+        "Result summaries"
+      ],
+      "opportunity": "Data science internship",
+      "links": []
+    },
+    {
+      "id": "human-ai-collaboration-studies",
+      "title": "Human-AI Collaboration Studies",
+      "status": "Emerging",
+      "statusClass": "emerging",
+      "category": "Human-Centered AI",
+      "type": "Research",
+      "summary": "Studies on how users interact with AI systems, trust automated decisions, and work with intelligent assistants.",
+      "tags": [
+        "Human-AI",
+        "Trust",
+        "Evaluation"
+      ],
+      "relatedResearch": [
+        "Human-Centered AI",
+        "NLP, Generative AI & Agents"
+      ],
+      "outputs": [
+        "Study design",
+        "Evaluation protocol",
+        "Publication plan"
+      ],
+      "opportunity": "Research assistant role",
+      "links": []
+    },
+    {
+      "id": "computer-vision-health-screening",
+      "title": "Computer Vision for Health Screening",
+      "status": "Planned",
+      "statusClass": "planned",
+      "category": "Computer Vision",
+      "type": "Research",
+      "summary": "Image and video analysis methods for screening, monitoring, annotation support, and health-related visual analytics.",
+      "tags": [
+        "Computer Vision",
+        "Health",
+        "Deep Learning"
+      ],
+      "relatedResearch": [
+        "Computer Vision",
+        "Biomedical & Health AI"
+      ],
+      "outputs": [
+        "Baseline models",
+        "Annotated examples",
+        "Research article"
+      ],
+      "opportunity": "Thesis or research internship",
+      "links": []
+    },
+    {
+      "id": "emran-sleep-hypnogram-aging",
+      "title": "Machine Learning-Based Analysis of Sleep Patterns in Healthy Ageing",
+      "status": "Ongoing",
+      "statusClass": "active",
+      "category": "Healthcare AI",
+      "type": "Doctoral Research",
+      "summary": "Investigates relationships between sleep dynamics, hypnogram patterns, sleep disorders, and healthy ageing using interpretable machine learning, deep learning, and graph neural network approaches.",
+      "tags": [
+        "Sleep Analysis",
+        "Hypnogram",
+        "Ageing",
+        "Interpretable ML",
+        "Deep Learning",
+        "GNN"
+      ],
+      "relatedResearch": [
+        "Biomedical & Health AI",
+        "Machine Learning & Data Science",
+        "Deep Learning & Multimodal AI"
+      ],
+      "outputs": [
+        "PhD thesis chapters",
+        "Machine-learning experiments",
+        "Research articles",
+        "Wearable sleep-monitoring feasibility analysis"
+      ],
+      "opportunity": "Research collaboration, intern literature review, experiment replication, or data-pipeline support",
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-icu-eeg-seizure-detection",
+      "title": "EEG Channel Optimisation and ICU Seizure Detection",
+      "status": "Completed / Continuing Research",
+      "statusClass": "published",
+      "category": "Biomedical AI",
+      "type": "Research Project",
+      "summary": "Applied machine learning and deep learning to EEG and continuous ICU EEG data for epileptic seizure detection, event-level analysis, and channel minimisation.",
+      "tags": [
+        "EEG",
+        "Epilepsy",
+        "Seizure Detection",
+        "Signal Processing",
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "relatedResearch": [
+        "Biomedical & Health AI",
+        "Signal Processing",
+        "Deep Learning & Multimodal AI"
+      ],
+      "outputs": [
+        "MRes thesis",
+        "Peer-reviewed publications",
+        "Feature extraction pipeline",
+        "Poster presentation"
+      ],
+      "opportunity": "Research extension, feature-engineering support, reproduction study, or clinical AI evaluation",
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-air-quality-deep-ensemble",
+      "title": "Sensor-Based Indoor Air Temperature and Air-Quality Prediction",
+      "status": "Completed / Published",
+      "statusClass": "published",
+      "category": "Environmental AI",
+      "type": "Research Assistant Project",
+      "summary": "Developed and evaluated deep ensemble machine-learning methods for indoor air-temperature prediction using sensor, meteorological, and traffic/environmental data in an Australian urban context.",
+      "tags": [
+        "Air Quality",
+        "Deep Ensemble Learning",
+        "Environmental Health",
+        "Forecasting",
+        "Sensor Data"
+      ],
+      "relatedResearch": [
+        "Machine Learning & Data Science",
+        "Sustainable Computing",
+        "Health Informatics"
+      ],
+      "outputs": [
+        "Published journal article",
+        "Forecasting models",
+        "Research collaboration output"
+      ],
+      "opportunity": "Follow-up research in environmental health analytics and AI forecasting",
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-genai-ecg-healthcare",
+      "title": "Generative and Agentic AI for Healthcare Risk and ECG Analysis",
+      "status": "Ongoing / Contract Research",
+      "statusClass": "active",
+      "category": "Healthcare AI",
+      "type": "Research Assistant Project",
+      "summary": "Supports feasibility and risk analysis of generative AI and agentic AI approaches for healthcare platforms and ECG-based cardiovascular disorder detection.",
+      "tags": [
+        "Generative AI",
+        "Agentic AI",
+        "ECG",
+        "Healthcare Security",
+        "Risk Analysis"
+      ],
+      "relatedResearch": [
+        "Generative AI & Agentic Systems",
+        "Biomedical & Health AI",
+        "Responsible AI"
+      ],
+      "outputs": [
+        "Method review",
+        "Risk assessment",
+        "Experiment documentation",
+        "Publication preparation"
+      ],
+      "opportunity": "Research and prototype collaboration for responsible healthcare AI workflows",
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-ddos-network-security",
+      "title": "Three-Layer Network Security Technique for DDoS Prevention",
+      "status": "Completed",
+      "statusClass": "completed",
+      "category": "Cybersecurity",
+      "type": "Research Associate Project",
+      "summary": "Designed a three-layer network security technique for server-side DDoS prevention as a research-associate project.",
+      "tags": [
+        "Network Security",
+        "DDoS",
+        "Server Protection",
+        "Cybersecurity"
+      ],
+      "relatedResearch": [
+        "Cybersecurity",
+        "Applied Computing"
+      ],
+      "outputs": [
+        "Project report",
+        "Security design concept"
+      ],
+      "opportunity": "Historical project record",
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-blood-sodium-nirs",
+      "title": "Non-Invasive Blood-Sodium Monitoring Using Near-Infrared Spectroscopy",
+      "status": "Completed",
+      "statusClass": "completed",
+      "category": "Health Technology",
+      "type": "Research Associate Project",
+      "summary": "Explored a non-invasive approach for measuring and monitoring blood-sodium concentration using near-infrared spectroscopy.",
+      "tags": [
+        "Near-Infrared Spectroscopy",
+        "Health Technology",
+        "Non-Invasive Monitoring",
+        "Biomedical Computing"
+      ],
+      "relatedResearch": [
+        "Biomedical & Health AI",
+        "Medical Technology"
+      ],
+      "outputs": [
+        "Project analysis",
+        "Design concept"
+      ],
+      "opportunity": "Historical project record",
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    },
+    {
+      "id": "emran-j2me-dictionary-search",
+      "title": "J2ME English Dictionary with Indexed Binary Search",
+      "status": "Completed / Published",
+      "statusClass": "published",
+      "category": "Mobile Computing",
+      "type": "Undergraduate Research Project",
+      "summary": "Developed a J2ME English-to-English dictionary and an indexed binary-search method to improve mobile dictionary search efficiency.",
+      "tags": [
+        "J2ME",
+        "Mobile Application",
+        "Algorithms",
+        "Indexed Binary Search"
+      ],
+      "relatedResearch": [
+        "Software Engineering Research",
+        "Algorithms"
+      ],
+      "outputs": [
+        "Undergraduate thesis",
+        "Conference publication",
+        "Mobile software prototype"
+      ],
+      "opportunity": "Historical project record",
+      "links": [
+        {
+          "label": "Profile source",
+          "url": "https://emran.humachlab.com"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "section": {
+    "title": "Opportunities",
+    "subtitle": "Join, Learn, Build, Publish",
+    "description": "Structured research, development, thesis, volunteer, and collaboration pathways for students, developers, researchers, and partners who want to contribute to HUMACH Research.",
+    "applicationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc2rjl6WL0T1_B5Y9ua9td9W2VP8LtreweC3V4BgHKmEk9K3g/viewform?usp=publish-editor"
+  },
+  "items": [
+    {
+      "id": "research-internship",
+      "title": "Research Internship",
+      "icon": "bi bi-search-heart",
+      "category": "Research",
+      "type": "Internship",
+      "status": "Open",
+      "statusClass": "open",
+      "summary": "For students interested in AI, data science, biomedical AI, NLP, signal processing, human-centered computing, or applied computing research.",
+      "details": "Research interns contribute to literature review, dataset preparation, experiment design, metric analysis, paper writing, and research communication. Tasks are matched to the intern's current skills and learning goals.",
+      "highlights": ["Literature review", "Experiments and evaluation", "Paper and report writing"],
+      "skills": ["Python", "Data analysis", "Machine learning basics", "Academic writing"],
+      "outcomes": ["Research summary or mini-review", "Experiment results and figures", "Conference/journal-ready writing support"],
+      "topics": ["Healthcare AI", "Sleep and biomedical signals", "NLP and generative AI", "Human-centered machine intelligence"],
+      "mode": "Remote / Hybrid",
+      "duration": "8-16 weeks flexible",
+      "commitment": "Project-based weekly milestones",
+      "idealFor": "Undergraduate, master’s, early research students",
+      "applicationNote": "Share your research interests, current skills, and one preferred HUMACH research area.",
+      "tags": ["Research", "AI", "Health", "Publication"],
+      "featured": false
+    },
+    {
+      "id": "development-internship",
+      "title": "Development Internship",
+      "icon": "bi bi-code-slash",
+      "category": "Development",
+      "type": "Internship",
+      "status": "Open",
+      "statusClass": "open",
+      "summary": "For students interested in web systems, dashboards, automation tools, databases, AI prototypes, static websites, and GitHub-ready software outputs.",
+      "details": "Development interns help convert HUMACH research ideas into practical interfaces, reusable code, data-driven pages, dashboards, and prototypes. The focus is learning by building real project components.",
+      "highlights": ["Frontend/backend practice", "Project-based learning", "GitHub portfolio building"],
+      "skills": ["HTML/CSS/JS", "Python", "Git/GitHub", "UI thinking"],
+      "outcomes": ["Portfolio-ready project contribution", "Documented code and reusable components", "Prototype or dashboard demonstration"],
+      "topics": ["Research dashboards", "AI prototype interfaces", "Data pipeline tools", "Training platforms"],
+      "mode": "Remote / Hybrid",
+      "duration": "6-12 weeks flexible",
+      "commitment": "Task-based weekly deliverables",
+      "idealFor": "Students and junior developers building a practical portfolio",
+      "applicationNote": "Share links to GitHub, portfolio, coursework, or any previous web/software work if available.",
+      "tags": ["Development", "Web", "Dashboard", "Portfolio"],
+      "featured": true
+    },
+    {
+      "id": "thesis-project-supervision",
+      "title": "Thesis / Project Supervision",
+      "icon": "bi bi-journal-richtext",
+      "category": "Academic Project",
+      "type": "Supervision",
+      "status": "Topic Matching",
+      "statusClass": "matching",
+      "summary": "For students who need a structured computer science, AI, data science, health AI, or software development project for coursework, capstone, thesis, or portfolio development.",
+      "details": "HUMACH can help shape feasible project questions, define datasets or software outputs, and align the project with research, implementation, and reporting requirements.",
+      "highlights": ["Topic refinement", "Project scope planning", "Report and presentation direction"],
+      "skills": ["Problem framing", "Literature search", "Implementation", "Evaluation"],
+      "outcomes": ["Clear project proposal", "Implementation roadmap", "Final report / demo / presentation"],
+      "topics": ["AI for health", "Education technology", "NLP applications", "Static or data-driven web tools"],
+      "mode": "Remote / Hybrid",
+      "duration": "Semester or project-dependent",
+      "commitment": "Regular milestone reviews",
+      "idealFor": "Final-year, master’s, and project-course students",
+      "applicationNote": "Include your institution/project requirements, deadline, and preferred topic direction.",
+      "tags": ["Thesis", "Capstone", "Supervision", "Student Project"],
+      "featured": false
+    },
+    {
+      "id": "volunteer-research-assistant",
+      "title": "Volunteer Research Assistant",
+      "icon": "bi bi-clipboard-data",
+      "category": "Research Support",
+      "type": "Assistantship",
+      "status": "Selective",
+      "statusClass": "selective",
+      "summary": "For motivated learners who want to support literature collection, dataset organisation, result checking, documentation, visualisation, or research administration tasks.",
+      "details": "This pathway is suitable for early contributors who want to gain research exposure before joining a larger research or development task.",
+      "highlights": ["Research support tasks", "Documentation practice", "Progressive responsibility"],
+      "skills": ["Attention to detail", "Spreadsheet/CSV work", "Markdown", "Basic analysis"],
+      "outcomes": ["Research workflow experience", "Documented contribution evidence", "Preparation for internship-level tasks"],
+      "topics": ["Publication tracking", "Dataset cataloguing", "Experiment documentation", "Website content updates"],
+      "mode": "Remote",
+      "duration": "Flexible",
+      "commitment": "Small scoped tasks",
+      "idealFor": "Beginners seeking research exposure",
+      "applicationNote": "Explain your availability and the kind of support task you want to learn first.",
+      "tags": ["Volunteer", "Research Support", "Documentation", "Beginner"],
+      "featured": false
+    },
+    {
+      "id": "collaboration-partnership",
+      "title": "Collaboration / Partnership",
+      "icon": "bi bi-people",
+      "category": "Collaboration",
+      "type": "Partnership",
+      "status": "Open",
+      "statusClass": "open",
+      "summary": "For researchers, universities, student teams, industry partners, and communities interested in applied AI, computing, health technology, or research software collaboration.",
+      "details": "Collaboration pathways may include joint research, shared datasets, prototype development, student supervision, technical reports, publications, workshops, or external project support.",
+      "highlights": ["Joint research", "Software prototypes", "Student supervision"],
+      "skills": ["Domain expertise", "Project coordination", "Research communication", "Technical collaboration"],
+      "outcomes": ["Joint proposal or concept note", "Prototype or research output", "Publication or report pathway"],
+      "topics": ["Applied AI", "Health and biomedical computing", "Human-centered systems", "Training and education"],
+      "mode": "Project-based",
+      "duration": "Defined by collaboration scope",
+      "commitment": "Mutually agreed milestones",
+      "idealFor": "Researchers, labs, organisations, and supervised student groups",
+      "applicationNote": "Describe the collaboration idea, expected outcome, timeline, and available resources.",
+      "tags": ["Collaboration", "Partner", "Research", "Prototype"],
+      "featured": false
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Express Interest",
+      "icon": "bi bi-send",
+      "description": "Submit the form with your pathway, background, skills, interests, and preferred research or development direction."
+    },
+    {
+      "step": "02",
+      "title": "Match a Pathway",
+      "icon": "bi bi-diagram-3",
+      "description": "HUMACH maps your interest to a research, development, thesis, volunteer, or collaboration pathway."
+    },
+    {
+      "step": "03",
+      "title": "Define Tasks",
+      "icon": "bi bi-list-check",
+      "description": "A small set of milestones is defined so the work is practical, measurable, and suitable for your current level."
+    },
+    {
+      "step": "04",
+      "title": "Build Evidence",
+      "icon": "bi bi-award",
+      "description": "You work toward clear outputs such as a report, code contribution, dashboard, prototype, literature summary, or publication support."
+    }
+  ],
+  "skillGroups": [
+    {
+      "name": "Research Skills",
+      "items": ["Literature review", "Experiment design", "Evaluation metrics", "Academic writing"]
+    },
+    {
+      "name": "Development Skills",
+      "items": ["HTML/CSS/JS", "Python", "Git/GitHub", "Dashboard/prototype design"]
+    },
+    {
+      "name": "Data and AI Skills",
+      "items": ["Data cleaning", "Feature extraction", "Machine learning", "Model interpretation"]
+    },
+    {
+      "name": "Professional Skills",
+      "items": ["Documentation", "Communication", "Task planning", "Portfolio presentation"]
+    }
+  ]
+}

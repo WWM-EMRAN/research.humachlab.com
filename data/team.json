@@ -1,0 +1,236 @@
+{
+  "section": {
+    "title": "Team",
+    "subtitle": "People Behind HUMACH",
+    "description": "HUMACH Research brings together research leadership, collaborators, developers, students, interns, and future alumni through structured research and development pathways."
+  },
+  "groups": [
+    {
+      "id": "leadership",
+      "name": "Leadership & Direction",
+      "summary": "Sets the research vision, supervises projects, coordinates collaborations, and ensures that outputs are scientifically meaningful and practically useful.",
+      "icon": "bi bi-compass"
+    },
+    {
+      "id": "research",
+      "name": "Researchers & Collaborators",
+      "summary": "Contribute to literature reviews, experiment design, model development, manuscript preparation, and interdisciplinary research translation.",
+      "icon": "bi bi-mortarboard"
+    },
+    {
+      "id": "development",
+      "name": "Development Contributors",
+      "summary": "Build dashboards, research tools, prototypes, data pipelines, documentation, and reproducible software components.",
+      "icon": "bi bi-code-slash"
+    },
+    {
+      "id": "students-interns",
+      "name": "Students, Interns & Alumni",
+      "summary": "Learn through milestone-based participation, project contribution, portfolio outputs, thesis work, and future alumni pathways.",
+      "icon": "bi bi-people"
+    }
+  ],
+  "items": [
+    {
+      "id": "research-lead",
+      "name": "Emran Ali",
+      "role": "Founder / Research Lead",
+      "group": "Leadership",
+      "category": "leadership",
+      "status": "Active",
+      "statusClass": "active",
+      "image": "assets/img/emran.jpg",
+      "summary": "PhD researcher and research-development lead specialising in AI, ML, deep learning, explainable AI, generative and agentic AI, health informatics, biomedical signal processing, sleep analysis, epilepsy, ageing, and air-quality analytics.",
+      "interests": [
+        "AI",
+        "ML",
+        "Deep Learning",
+        "XAI",
+        "GenAI",
+        "Agentic AI",
+        "Health Informatics",
+        "Biomedical Signal Processing",
+        "EEG",
+        "Hypnogram",
+        "Sleep",
+        "Ageing"
+      ],
+      "projects": [
+        "Sleep dynamics and healthy ageing using hypnograms",
+        "EEG-based epileptic seizure detection and channel optimisation",
+        "Indoor air-temperature and air-quality prediction",
+        "GenAI and agentic AI for health and research workflows"
+      ],
+      "outputs": [
+        "Research supervision",
+        "Publication planning",
+        "Project architecture",
+        "Software and data-pipeline development",
+        "Teaching and training"
+      ],
+      "links": [
+        {
+          "label": "Personal website",
+          "url": "https://emran.humachlab.com"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/wwmemran"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com.au/citations?user=ej8d6LkAAAAJ"
+        }
+      ],
+      "organization": "HUMACH Research"
+    },
+    {
+      "id": "research-collaborators",
+      "name": "Researchers & Collaborators",
+      "role": "Research Contributors",
+      "group": "Research",
+      "category": "research",
+      "status": "Open to Collaboration",
+      "statusClass": "matching",
+      "image": "assets/img/ashikur.png",
+      "summary": "Collaborators and researchers working across AI, data science, biomedical computing, human-centered systems, and applied computing projects.",
+      "interests": [
+        "AI",
+        "Data Science",
+        "Biomedical Computing",
+        "Applied Research"
+      ],
+      "projects": [
+        "Literature review support",
+        "Experiment design",
+        "Manuscript and analysis support"
+      ],
+      "outputs": [
+        "Research summaries",
+        "Model evaluation",
+        "Figures and tables",
+        "Paper drafts"
+      ],
+      "links": [],
+      "organization": "HUMACH Research"
+    },
+    {
+      "id": "development-contributors",
+      "name": "Development Contributors",
+      "role": "Software, Prototype & Tool Builders",
+      "group": "Development",
+      "category": "development",
+      "status": "Recruiting",
+      "statusClass": "open",
+      "image": "",
+      "summary": "Developers contributing to dashboards, research automation tools, web interfaces, APIs, visual analytics, documentation, and prototype systems.",
+      "interests": [
+        "Web Development",
+        "Dashboards",
+        "Research Tools",
+        "Deployment"
+      ],
+      "projects": [
+        "Static and dynamic research websites",
+        "Interactive dashboards",
+        "Reusable data-loader components"
+      ],
+      "outputs": [
+        "GitHub-ready code",
+        "Technical documentation",
+        "Demo pages",
+        "Reusable components"
+      ],
+      "links": [],
+      "organization": "HUMACH Research"
+    },
+    {
+      "id": "research-interns",
+      "name": "Research Interns",
+      "role": "Student Research Contributors",
+      "group": "Students & Interns",
+      "category": "internship research students-interns",
+      "status": "Open",
+      "statusClass": "open",
+      "image": "",
+      "summary": "Interns join supervised research tasks such as reading, dataset preparation, experiments, result analysis, and manuscript-support activities.",
+      "interests": [
+        "Research Training",
+        "Machine Learning",
+        "Data Analysis",
+        "Academic Writing"
+      ],
+      "projects": [
+        "Research-area tasks",
+        "Dataset summaries",
+        "Model benchmarking"
+      ],
+      "outputs": [
+        "Annotated bibliography",
+        "Experiment report",
+        "Presentation slides",
+        "Research portfolio item"
+      ],
+      "links": [],
+      "organization": "HUMACH Research"
+    },
+    {
+      "id": "development-interns",
+      "name": "Development Interns",
+      "role": "Student Developers",
+      "group": "Students & Interns",
+      "category": "internship development students-interns",
+      "status": "Open",
+      "statusClass": "open",
+      "image": "",
+      "summary": "Development interns contribute to frontend pages, data-driven components, project documentation, UI improvements, and research software prototypes.",
+      "interests": [
+        "HTML/CSS/JS",
+        "UI Components",
+        "Data Loading",
+        "Documentation"
+      ],
+      "projects": [
+        "HUMACH website modules",
+        "Project cards",
+        "Publication and team directories"
+      ],
+      "outputs": [
+        "Portfolio-ready feature",
+        "Clean code contribution",
+        "Implementation notes",
+        "Demo screenshots"
+      ],
+      "links": [],
+      "organization": "HUMACH Research"
+    },
+    {
+      "id": "future-alumni",
+      "name": "Future Alumni Network",
+      "role": "Completed Contributors",
+      "group": "Alumni",
+      "category": "alumni students-interns",
+      "status": "Planned",
+      "statusClass": "planned",
+      "image": "",
+      "summary": "As HUMACH grows, completed interns, students, and collaborators can be listed as alumni with project contributions and outputs.",
+      "interests": [
+        "Alumni",
+        "Mentoring",
+        "Project Legacy"
+      ],
+      "projects": [
+        "Completed internships",
+        "Past thesis projects",
+        "Released prototypes"
+      ],
+      "outputs": [
+        "Contributor archive",
+        "Past project highlights",
+        "Mentor network"
+      ],
+      "links": [],
+      "organization": "HUMACH Research"
+    }
+  ]
+}

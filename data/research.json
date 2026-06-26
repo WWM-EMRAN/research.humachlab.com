@@ -1,0 +1,63 @@
+{
+  "section": {
+    "title": "Research",
+    "subtitle": "Core Research Areas",
+    "description": "Research themes that connect human-centered AI, advanced computing, health technology, data science, and applied software systems."
+  },
+  "items": [
+    {
+      "id": "machine-learning-data-science",
+      "title": "Machine Learning & Data Science",
+      "icon": "bi bi-activity",
+      "summary": "Predictive modelling, classification, feature engineering, explainability, and data-driven decision support.",
+      "tags": ["ML", "Analytics", "XAI"],
+      "topics": ["Supervised learning", "Feature engineering", "Explainable AI", "Evaluation pipelines"],
+      "status": "Active"
+    },
+    {
+      "id": "deep-learning-multimodal-ai",
+      "title": "Deep Learning & Multimodal AI",
+      "icon": "bi bi-bounding-box-circles",
+      "summary": "Representation learning from signals, text, images, graphs, and multimodal research datasets.",
+      "tags": ["DL", "GNN", "Multimodal"],
+      "topics": ["CNN/LSTM/Transformer models", "Graph neural networks", "Multimodal fusion", "Latent representation learning"],
+      "status": "Active"
+    },
+    {
+      "id": "biomedical-health-ai",
+      "title": "Biomedical & Health AI",
+      "icon": "bi bi-heart-pulse",
+      "summary": "AI systems for physiological signals, sleep analysis, health monitoring, and clinical decision support.",
+      "tags": ["Health", "Signals", "Sleep"],
+      "topics": ["Biomedical signals", "Sleep analysis", "Decision support", "Health informatics"],
+      "status": "Active"
+    },
+    {
+      "id": "nlp-generative-ai-agents",
+      "title": "NLP, Generative AI & Agents",
+      "icon": "bi bi-chat-square-text",
+      "summary": "Language AI, domain assistants, research automation, responsible generation, and agentic workflows.",
+      "tags": ["NLP", "GenAI", "Agents"],
+      "topics": ["LLM workflows", "Research assistants", "Document intelligence", "Responsible AI"],
+      "status": "Emerging"
+    },
+    {
+      "id": "software-engineering-research",
+      "title": "Software Engineering Research",
+      "icon": "bi bi-code-square",
+      "summary": "Human-centered software systems, web platforms, research tools, automation, and applied development practices.",
+      "tags": ["Software", "Web", "Tools"],
+      "topics": ["Research software", "Web systems", "Automation", "Human-centered design"],
+      "status": "Active"
+    },
+    {
+      "id": "ai-education-training",
+      "title": "AI for Education & Training",
+      "icon": "bi bi-mortarboard",
+      "summary": "Student-centred learning systems, intelligent tutors, assessment support, and research-skill development.",
+      "tags": ["Education", "Training", "Learning"],
+      "topics": ["Learning analytics", "AI tutoring", "Assessment support", "Student research training"],
+      "status": "Active"
+    }
+  ]
+}

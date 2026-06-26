@@ -1,0 +1,199 @@
+{
+  "section": {
+    "title": "Contact",
+    "subtitle": "Contact and Collaboration Gateway",
+    "description": "Structured contact pathways for research collaboration, development work, internships, thesis supervision, publication outputs, and general HUMACH Research communication."
+  },
+  "summary": {
+    "label": "Gateway",
+    "headline": "Research \u00b7 Development \u00b7 Internship \u00b7 Collaboration",
+    "description": "Use this page to choose the right pathway, include the right context, and connect with HUMACH Research.",
+    "metrics": [
+      {
+        "value": "5",
+        "label": "Inquiry Types"
+      },
+      {
+        "value": "4",
+        "label": "Routes"
+      },
+      {
+        "value": "Open",
+        "label": "To Connect"
+      }
+    ]
+  },
+  "inquiries": [
+    {
+      "title": "Research Collaboration",
+      "type": "Research",
+      "icon": "bi bi-cpu",
+      "featured": true,
+      "summary": "For AI, computing, health, signal processing, data science, education technology, or human-centered systems research.",
+      "include": [
+        "Research goal",
+        "Expected contribution",
+        "Timeline or target output"
+      ],
+      "links": [
+        {
+          "label": "View Research Areas",
+          "url": "research.html"
+        }
+      ]
+    },
+    {
+      "title": "Development Project",
+      "type": "Development",
+      "icon": "bi bi-code-square",
+      "summary": "For dashboards, web systems, AI prototypes, research automation tools, and deployable software workflows.",
+      "include": [
+        "Problem statement",
+        "Prototype or tool idea",
+        "Data/platform requirements"
+      ],
+      "links": [
+        {
+          "label": "View Development",
+          "url": "development.html"
+        }
+      ]
+    },
+    {
+      "title": "Internship or Student Pathway",
+      "type": "Opportunity",
+      "icon": "bi bi-person-plus",
+      "summary": "For research internships, development internships, thesis projects, student supervision, and guided contribution roles.",
+      "include": [
+        "Current study level",
+        "Skills and interests",
+        "Preferred duration"
+      ],
+      "links": [
+        {
+          "label": "View Opportunities",
+          "url": "opportunities.html"
+        },
+        {
+          "label": "Open Join Form",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSc2rjl6WL0T1_B5Y9ua9td9W2VP8LtreweC3V4BgHKmEk9K3g/viewform?usp=publish-editor"
+        }
+      ]
+    },
+    {
+      "title": "Publication or Output Contribution",
+      "type": "Output",
+      "icon": "bi bi-journal-text",
+      "summary": "For articles, technical reports, datasets, software papers, documentation, and reproducible research outputs.",
+      "include": [
+        "Proposed output",
+        "Related project or dataset",
+        "Contribution role"
+      ],
+      "links": [
+        {
+          "label": "View Publications",
+          "url": "publications.html"
+        }
+      ]
+    },
+    {
+      "title": "General Inquiry",
+      "type": "General",
+      "icon": "bi bi-chat-dots",
+      "summary": "For general questions about HUMACH Research, collaboration possibilities, website content, or future directions.",
+      "include": [
+        "Question or purpose",
+        "Relevant background",
+        "Preferred contact method"
+      ],
+      "links": [
+        {
+          "label": "Email HUMACH",
+          "url": "mailto:contact@humachresearch.org"
+        }
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "title": "General Email",
+      "icon": "bi bi-envelope",
+      "summary": "Use the main HUMACH email for research, development, and collaboration questions.",
+      "label": "contact@humachresearch.org",
+      "url": "mailto:contact@humachresearch.org"
+    },
+    {
+      "title": "Join Form",
+      "icon": "bi bi-person-plus",
+      "summary": "Use the application form for internships, student roles, and contributor pathways.",
+      "label": "Open Join Form",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc2rjl6WL0T1_B5Y9ua9td9W2VP8LtreweC3V4BgHKmEk9K3g/viewform?usp=publish-editor"
+    },
+    {
+      "title": "Project Directory",
+      "icon": "bi bi-kanban",
+      "summary": "Explore current project directions before proposing a contribution.",
+      "label": "View Projects",
+      "url": "projects.html"
+    },
+    {
+      "title": "Opportunities Page",
+      "icon": "bi bi-mortarboard",
+      "summary": "Review internship, thesis, research assistant, and collaboration pathways.",
+      "label": "View Opportunities",
+      "url": "opportunities.html"
+    }
+  ],
+  "checklist": [
+    "Your role or background",
+    "Inquiry type",
+    "Relevant skills or experience",
+    "Project/research area of interest",
+    "Timeline and expected output"
+  ],
+  "routes": [
+    {
+      "step": "01",
+      "title": "Research Partner",
+      "summary": "Develop studies, experiments, papers, datasets, or grant ideas."
+    },
+    {
+      "step": "02",
+      "title": "Development Partner",
+      "summary": "Build dashboards, tools, prototypes, web systems, and AI-powered workflows."
+    },
+    {
+      "step": "03",
+      "title": "Student Contributor",
+      "summary": "Join through internships, thesis projects, or guided research/development tasks."
+    },
+    {
+      "step": "04",
+      "title": "Publication Contributor",
+      "summary": "Contribute to articles, reports, software papers, datasets, or technical documentation."
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Choose Pathway",
+      "summary": "Select whether the inquiry is for research, development, internship, publication, or collaboration."
+    },
+    {
+      "step": "02",
+      "title": "Share Context",
+      "summary": "Send your goal, background, skills, preferred timeline, and expected contribution."
+    },
+    {
+      "step": "03",
+      "title": "Match Direction",
+      "summary": "Connect the inquiry to a research area, project, development task, or opportunity pathway."
+    },
+    {
+      "step": "04",
+      "title": "Start Contribution",
+      "summary": "Define the first task, expected output, supervision model, and communication routine."
+    }
+  ]
+}

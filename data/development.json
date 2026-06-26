@@ -1,0 +1,117 @@
+{
+  "section": {
+    "title": "Development",
+    "subtitle": "Software, Prototypes, and Research Tools",
+    "description": "Practical systems, prototypes, dashboards, and reusable tools that translate HUMACH research ideas into usable software, student training outputs, and collaborative technology assets."
+  },
+  "items": [
+    {
+      "id": "research-dashboards",
+      "title": "Research Dashboard Platforms",
+      "icon": "bi bi-window-sidebar",
+      "category": "Research Software",
+      "type": "Dashboard",
+      "status": "Active Direction",
+      "statusClass": "active",
+      "summary": "Interactive web interfaces for managing datasets, experiments, metrics, papers, team outputs, and project progress.",
+      "details": "These systems help research teams move from scattered files and spreadsheets to structured, visual, and reproducible research management.",
+      "tags": ["Dashboard", "Analytics", "Experiments", "Results"],
+      "tools": ["HTML/CSS/JS", "Python", "CSV/JSON", "Charts"],
+      "outputs": ["Experiment result viewers", "Project progress dashboards", "Publication and dataset trackers"],
+      "opportunity": "Development internship / research assistant task"
+    },
+    {
+      "id": "ai-prototypes",
+      "title": "AI Prototype Systems",
+      "icon": "bi bi-robot",
+      "category": "Artificial Intelligence",
+      "type": "Prototype",
+      "status": "Active Direction",
+      "statusClass": "active",
+      "summary": "Applied AI models, assistants, decision-support workflows, and intelligent interfaces for research and real-world use cases.",
+      "details": "Prototype work converts machine learning, NLP, generative AI, and decision-support ideas into demonstrable systems.",
+      "tags": ["AI", "Prototype", "Assistant", "Decision Support"],
+      "tools": ["Python", "ML/DL", "APIs", "Prompt workflows"],
+      "outputs": ["AI assistants", "Model demos", "Decision-support workflows"],
+      "opportunity": "Research and development internship"
+    },
+    {
+      "id": "data-pipelines",
+      "title": "Data Processing Pipelines",
+      "icon": "bi bi-database-gear",
+      "category": "Data Engineering",
+      "type": "Pipeline",
+      "status": "Core Capability",
+      "statusClass": "planned",
+      "summary": "Reusable workflows for data cleaning, feature extraction, validation, model evaluation, and automated reporting.",
+      "details": "Pipeline development supports reproducibility, repeated experiments, and reliable comparison across projects and datasets.",
+      "tags": ["Data", "Pipeline", "Feature Extraction", "Reporting"],
+      "tools": ["Python", "Pandas", "Scikit-learn", "Jupyter"],
+      "outputs": ["Preprocessing scripts", "Evaluation templates", "Automated summary reports"],
+      "opportunity": "Research software task"
+    },
+    {
+      "id": "open-research-tools",
+      "title": "Open Research Tools",
+      "icon": "bi bi-github",
+      "category": "Open Source",
+      "type": "Tooling",
+      "status": "Emerging",
+      "statusClass": "emerging",
+      "summary": "Reusable templates, scripts, packages, documentation, and GitHub-ready codebases for students and collaborators.",
+      "details": "Open tools make HUMACH outputs easier to reuse, audit, extend, teach, and showcase in student portfolios.",
+      "tags": ["GitHub", "Templates", "Documentation", "Open Source"],
+      "tools": ["Git", "Markdown", "Python", "Static Web"],
+      "outputs": ["Reusable code templates", "Documentation kits", "Project starter repositories"],
+      "opportunity": "Development internship"
+    },
+    {
+      "id": "health-tech-applications",
+      "title": "Health Technology Applications",
+      "icon": "bi bi-heart-pulse",
+      "category": "Health Technology",
+      "type": "Application",
+      "status": "Concept to Prototype",
+      "statusClass": "concept",
+      "summary": "Interfaces and tools for biomedical signal analysis, sleep research, clinical data exploration, and health-focused AI communication.",
+      "details": "This direction links HUMACH's health research identity with usable software systems for analysis, education, and decision support.",
+      "tags": ["Health AI", "Biomedical", "Signals", "Clinical Tools"],
+      "tools": ["Python", "Dashboards", "Visual Analytics", "ML Models"],
+      "outputs": ["Health data viewers", "Signal-analysis prototypes", "Model interpretation pages"],
+      "opportunity": "Research/development collaboration"
+    },
+    {
+      "id": "education-training-platforms",
+      "title": "Education and Training Platforms",
+      "icon": "bi bi-mortarboard",
+      "category": "Education Technology",
+      "type": "Learning System",
+      "status": "Recruiting",
+      "statusClass": "recruiting",
+      "summary": "Learning pages, guided tasks, internship dashboards, and training resources for research and software development pathways.",
+      "details": "Training platforms help students move from basic learning to project participation, documentation, and portfolio-ready outputs.",
+      "tags": ["Training", "Internship", "Learning", "Portfolio"],
+      "tools": ["Static Web", "Forms", "JSON", "Documentation"],
+      "outputs": ["Internship learning paths", "Task boards", "Portfolio evidence pages"],
+      "opportunity": "Student development project"
+    }
+  ],
+  "stack": [
+    {
+      "name": "Frontend",
+      "items": ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive UI"]
+    },
+    {
+      "name": "Data and Analysis",
+      "items": ["Python", "Pandas", "Scikit-learn", "Jupyter", "CSV/JSON"]
+    },
+    {
+      "name": "AI and Research",
+      "items": ["Machine Learning", "Deep Learning", "NLP", "Generative AI", "Evaluation"]
+    },
+    {
+      "name": "Collaboration",
+      "items": ["GitHub", "Markdown", "Documentation", "Project Reports", "Research Writing"]
+    }
+  ]
+}
