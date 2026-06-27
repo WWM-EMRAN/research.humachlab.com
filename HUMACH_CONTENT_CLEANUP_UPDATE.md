@@ -36,7 +36,7 @@ python -m http.server 8000
 Then open:
 
 ```text
-http://localhost:8000/member-details.html?id=research-lead
+http://localhost:8000/member-details.html#emran-ali
 ```
 
 The Professional Experience section should show the current role affiliation as `Leadership, HUMACH Research`.

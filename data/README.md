@@ -38,10 +38,10 @@ Then open `http://localhost:8000` in the browser.
 
 - `member-cv.json` — additional CV-style data for member profile pages.
 
-The printable member CV page is `member-details.html?id=<member-id>`. It combines:
+The printable member CV page is `member-details.html#<member-name-slug>`. It combines:
 
 1. `data/team.json` for the member's public profile, role, status, interests, summary, and image.
-2. `data/member-cv.json` for additional CV-specific sections such as academic information, certificates, courses, and extracurricular activities.
+2. `data/member-cv.json` for additional CV-specific sections such as academic information, awards and achievements, certificates, courses, and extracurricular activities.
 3. `data/projects.json` for linked project cards using `projectIds` inside `member-cv.json`.
 4. `data/publications.json` for linked publication cards using `publicationIds` inside `member-cv.json`.
 
@@ -49,9 +49,10 @@ Required CV sections currently supported:
 
 - Academic Info
 - Professional Experience
+- Awards and Achievements
 - Projects
 - Publications
 - Certificates and Courses
 - Extracurricular Activity
 
-Use the same `memberId` value in `member-cv.json` as the `id` value in `team.json`.
+Use the same `memberId` value in `member-cv.json` as the internal `id` value in `team.json`. Public member CV URLs should use the name-based `slug` value, for example `member-details.html#emran-ali`.

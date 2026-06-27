@@ -64,3 +64,7 @@ Important corrected files:
 - `team.html`
 - `assets/js/humach-data-loader.js`
 - `VALIDATION_REPORT.md`
+
+## Latest Update
+
+- `HUMACH_CV_AWARDS_NAME_URL_UPDATE.md` — CV awards section and name-based URL update notes.

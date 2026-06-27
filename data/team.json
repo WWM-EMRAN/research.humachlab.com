@@ -82,7 +82,8 @@
           "url": "https://scholar.google.com.au/citations?user=ej8d6LkAAAAJ"
         }
       ],
-      "organization": "HUMACH Research"
+      "organization": "HUMACH Research",
+      "slug": "emran-ali"
     },
     {
       "id": "research-collaborators",
@@ -112,7 +113,8 @@
         "Paper drafts"
       ],
       "links": [],
-      "organization": "HUMACH Research"
+      "organization": "HUMACH Research",
+      "slug": "researchers-and-collaborators"
     },
     {
       "id": "development-contributors",
@@ -142,7 +144,8 @@
         "Reusable components"
       ],
       "links": [],
-      "organization": "HUMACH Research"
+      "organization": "HUMACH Research",
+      "slug": "development-contributors"
     },
     {
       "id": "research-interns",
@@ -172,7 +175,8 @@
         "Research portfolio item"
       ],
       "links": [],
-      "organization": "HUMACH Research"
+      "organization": "HUMACH Research",
+      "slug": "research-interns"
     },
     {
       "id": "development-interns",
@@ -202,7 +206,8 @@
         "Demo screenshots"
       ],
       "links": [],
-      "organization": "HUMACH Research"
+      "organization": "HUMACH Research",
+      "slug": "development-interns"
     },
     {
       "id": "future-alumni",
@@ -230,7 +235,8 @@
         "Mentor network"
       ],
       "links": [],
-      "organization": "HUMACH Research"
+      "organization": "HUMACH Research",
+      "slug": "future-alumni-network"
     }
   ]
 }

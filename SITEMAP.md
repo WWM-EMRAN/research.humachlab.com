@@ -28,3 +28,5 @@
 - Publications: `data/publications.json`
 - News: `data/news.json`
 - Contact: `data/contact.json`
+
+- `member-details.html#emran-ali` — Printable CV profile for Emran Ali.

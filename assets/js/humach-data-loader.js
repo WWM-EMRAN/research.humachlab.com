@@ -286,6 +286,15 @@
   }
 
 
+  function slugifyMemberUrl(value) {
+    return String(value == null ? "" : value)
+      .trim()
+      .toLowerCase()
+      .replace(/&/g, " and ")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "") || "member";
+  }
+
   function normaliseFilterValue(value) {
     return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
@@ -803,12 +812,13 @@
     if (!target || !data || !Array.isArray(data.items)) return;
     target.innerHTML = data.items.slice(0, 6).map(function (item, index) {
       var delay = 100 + index * 80;
+      var memberSlug = item.slug || slugifyMemberUrl(item.name || item.id);
       var imageBlock = item.image
         ? '<img src="' + escapeHtml(item.image) + '" alt="' + escapeHtml(item.name) + '">'
         : '<i class="bi bi-person-plus"></i>';
       return [
         '<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="' + delay + '">',
-        '  <div class="team-preview-card' + (item.image ? "" : " empty-profile") + '" data-content-id="' + escapeHtml(item.id) + '">',
+        '  <div class="team-preview-card' + (item.image ? "" : " empty-profile") + '" data-content-id="' + escapeHtml(memberSlug) + '" data-member-id="' + escapeHtml(item.id) + '">',
              imageBlock,
         '    <h3>' + escapeHtml(item.name) + '</h3>',
         '    <p>' + escapeHtml(item.summary) + '</p>',
@@ -871,6 +881,7 @@
     if (!target || !data || !Array.isArray(data.items)) return;
     target.innerHTML = data.items.map(function (item, index) {
       var delay = 100 + (index % 6) * 80;
+      var memberSlug = item.slug || slugifyMemberUrl(item.name || item.id);
       var tokens = getTeamFilterTokens(item).join(' ');
       var imageBlock = item.image
         ? '<img src="' + escapeHtml(item.image) + '" alt="' + escapeHtml(item.name) + '">'
@@ -883,7 +894,7 @@
         : '';
       return [
         '<div class="col-lg-4 col-md-6 team-grid-item" data-aos="fade-up" data-aos-delay="' + delay + '" data-team-tokens="' + escapeHtml(tokens) + '">',
-        '  <article class="team-detail-card' + (item.image ? '' : ' placeholder-profile') + '" id="' + escapeHtml(item.id) + '" data-content-id="' + escapeHtml(item.id) + '">',
+        '  <article class="team-detail-card' + (item.image ? '' : ' placeholder-profile') + '" id="' + escapeHtml(memberSlug) + '" data-content-id="' + escapeHtml(memberSlug) + '" data-member-id="' + escapeHtml(item.id) + '">',
         '    <div class="team-photo">' + imageBlock + '</div>',
         '    <div class="project-status ' + escapeHtml(item.statusClass || 'active') + '">' + escapeHtml(item.status || 'Active') + '</div>',
         '    <span>' + escapeHtml(formatAffiliation(item.group || item.category || 'Team', item.organization || 'HUMACH Research')) + '</span>',
@@ -1200,7 +1211,7 @@
   }
 
   var DATA_CACHE_PREFIX = "humach-data-cache:";
-  var DATA_CACHE_VERSION = "2026-06-team-filter-cache-v2";
+  var DATA_CACHE_VERSION = "2026-06-cv-awards-name-url-v1";
   var DATA_CACHE_MAX_AGE = 30 * 60 * 1000; // 30 minutes
 
   function getCacheKey(path) {

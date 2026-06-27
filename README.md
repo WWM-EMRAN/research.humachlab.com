@@ -116,13 +116,13 @@ The final package keeps the original static-site nature while adding a stronger 
 This version adds a printable member CV page:
 
 ```text
-member-details.html?id=<member-id>
+member-details.html#<member-name-slug>
 ```
 
 Example:
 
 ```text
-http://localhost:8000/member-details.html?id=research-lead
+http://localhost:8000/member-details.html#emran-ali
 ```
 
 The CV page is fully JSON-driven and combines data from:
@@ -132,12 +132,12 @@ The CV page is fully JSON-driven and combines data from:
 - `data/projects.json`
 - `data/publications.json`
 
-Team cards include a **Details / CV** link. The CV page includes a **Print CV** button and print-specific styling.
+Team cards include a **Details / CV** link. The CV page includes a **Print CV** button, print-specific styling, and an **Awards and Achievements** section.
 
 
 ## Emran Ali CV JSON Update
 
-The printable member CV for Emran Ali is populated from the public personal website content. Preview it at `member-details.html?id=research-lead`. The CV combines `data/team.json`, `data/member-cv.json`, `data/projects.json`, and `data/publications.json`.
+The printable member CV for Emran Ali is populated from the public personal website content. Preview it at `member-details.html#emran-ali`. The CV combines `data/team.json`, `data/member-cv.json`, `data/projects.json`, and `data/publications.json`.
 
 
 ## Logo Assets
@@ -164,7 +164,7 @@ This version refines public website copy after the team CV and logo updates.
 Preview Emran Ali's CV page with:
 
 ```text
-member-details.html?id=research-lead
+member-details.html#emran-ali
 ```
 
 

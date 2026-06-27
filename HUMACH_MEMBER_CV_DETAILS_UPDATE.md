@@ -7,13 +7,13 @@ This update adds a printable, CV-style details page for HUMACH team members. Eac
 ## New Page
 
 ```text
-member-details.html?id=<member-id>
+member-details.html#<member-name-slug>
 ```
 
 Example:
 
 ```text
-member-details.html?id=research-lead
+member-details.html#emran-ali
 ```
 
 The page includes a **Print CV** button and print-specific CSS so the CV can be printed or saved as a PDF from the browser.
@@ -49,7 +49,7 @@ assets/js/humach-member-cv.js
 This script does two things:
 
 1. Adds **Details / CV** links to team cards and homepage team preview cards.
-2. Renders `member-details.html` using the selected member ID from the URL query string.
+2. Renders `member-details.html` using the selected member name slug from the URL hash.
 
 ## New CSS
 
@@ -94,7 +94,7 @@ To add a real member CV:
 6. Open the member page using:
 
 ```text
-member-details.html?id=<member-id>
+member-details.html#<member-name-slug>
 ```
 
 ## Preview Requirement
@@ -108,5 +108,5 @@ python -m http.server 8000
 Then open:
 
 ```text
-http://localhost:8000/member-details.html?id=research-lead
+http://localhost:8000/member-details.html#emran-ali
 ```

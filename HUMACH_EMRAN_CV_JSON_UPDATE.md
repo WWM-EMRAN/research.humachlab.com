@@ -32,7 +32,7 @@ python -m http.server 8000
 Open:
 
 ```text
-http://localhost:8000/member-details.html?id=research-lead
+http://localhost:8000/member-details.html#emran-ali
 ```
 
 Use the **Print CV** button on the page to print or save as PDF.

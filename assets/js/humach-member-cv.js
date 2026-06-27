@@ -1,6 +1,6 @@
 /**
  * HUMACH member CV detail system
- * Adds CV/detail links to team cards and renders member-details.html from JSON data.
+ * Adds CV/detail links to team cards and renders member-details.html#member-name from JSON data.
  */
 (function () {
   "use strict";
@@ -23,6 +23,26 @@
 
   function getQueryParam(name) {
     return new URLSearchParams(window.location.search).get(name);
+  }
+
+  function slugify(value) {
+    return String(value == null ? "" : value)
+      .trim()
+      .toLowerCase()
+      .replace(/&/g, " and ")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "") || "member";
+  }
+
+  function getMemberUrlKey() {
+    var hash = window.location.hash ? decodeURIComponent(window.location.hash.replace(/^#/, "")) : "";
+    return hash || getQueryParam("member") || getQueryParam("id") || "";
+  }
+
+  function ensureNameBasedHash(memberSlug) {
+    if (!memberSlug || !window.history || typeof window.history.replaceState !== "function") return;
+    if (window.location.hash.replace(/^#/, "") === memberSlug) return;
+    window.history.replaceState(null, "", window.location.pathname + "#" + encodeURIComponent(memberSlug));
   }
 
   function loadJson(path) {
@@ -57,9 +77,29 @@
     return items.find(function (item) { return item && item.id === id; }) || null;
   }
 
-  function cvByMemberId(items, memberId) {
+  function memberByKey(items, key) {
     if (!Array.isArray(items)) return null;
-    return items.find(function (item) { return item && item.memberId === memberId; }) || null;
+    var normalised = slugify(key);
+    return items.find(function (item) {
+      if (!item) return false;
+      return item.id === key ||
+        item.slug === key ||
+        slugify(item.name) === normalised ||
+        slugify(item.id) === normalised ||
+        slugify(item.slug) === normalised;
+    }) || null;
+  }
+
+  function cvByMember(items, member, key) {
+    if (!Array.isArray(items) || !member) return null;
+    var normalised = slugify(key || member.slug || member.name || member.id);
+    return items.find(function (item) {
+      if (!item) return false;
+      return item.memberId === member.id ||
+        item.slug === member.slug ||
+        slugify(item.slug) === normalised ||
+        slugify(item.memberId) === normalised;
+    }) || null;
   }
 
   function renderTags(tags, className) {
@@ -180,9 +220,11 @@
 
     var teamItems = data.team && Array.isArray(data.team.items) ? data.team.items : [];
     var cvItems = data.memberCv && Array.isArray(data.memberCv.items) ? data.memberCv.items : [];
-    var memberId = getQueryParam("id") || (teamItems[0] && teamItems[0].id);
-    var member = itemById(teamItems, memberId);
-    var cv = cvByMemberId(cvItems, memberId) || {};
+    var requestedKey = getMemberUrlKey();
+    var member = memberByKey(teamItems, requestedKey) || teamItems[0];
+    var memberSlug = slugify((member && (member.slug || member.name || member.id)) || requestedKey);
+    var cv = cvByMember(cvItems, member, requestedKey || memberSlug) || {};
+    ensureNameBasedHash(memberSlug);
 
     if (!member) {
       root.innerHTML = [
@@ -223,7 +265,7 @@
       '      </div>',
       '      <div class="member-cv-actions cv-no-print">',
       '        <button class="btn-humach btn-humach-primary" type="button" data-member-print><i class="bi bi-printer"></i> Print CV</button>',
-      '        <a class="btn-humach btn-humach-outline" href="team.html#' + escapeHtml(member.id) + '"><i class="bi bi-arrow-left"></i> Back to Team</a>',
+      '        <a class="btn-humach btn-humach-outline" href="team.html#' + escapeHtml(memberSlug) + '"><i class="bi bi-arrow-left"></i> Back to Team</a>',
       '      </div>',
       '    </div>',
       '  </div>',
@@ -241,7 +283,7 @@
       '          <p>' + escapeHtml(member.summary || '') + '</p>',
       '          <div class="cv-mini-line"><strong>Group:</strong> ' + escapeHtml(formatAffiliation(member.group, member.organization || 'HUMACH Research')) + '</div>',
       '          <div class="cv-mini-line"><strong>Status:</strong> ' + escapeHtml(member.status || '') + '</div>',
-      '          <div class="cv-mini-line"><strong>Member ID:</strong> ' + escapeHtml(member.id || '') + '</div>',
+      '          <div class="cv-mini-line"><strong>Profile:</strong> #' + escapeHtml(memberSlug || '') + '</div>',
       '        </div>',
       '        <div class="cv-side-card">',
       '          <h2>Focus Areas</h2>',
@@ -252,6 +294,7 @@
       '      <div class="cv-main">',
       '        <section class="cv-section" id="academic-info"><h2><i class="bi bi-mortarboard"></i> Academic Info</h2>' + renderEntryList(cv.academicInfo, "Academic information has not been added yet.") + '</section>',
       '        <section class="cv-section" id="professional-experience"><h2><i class="bi bi-briefcase"></i> Professional Experience</h2>' + currentRole + extraExperience + '</section>',
+      '        <section class="cv-section" id="awards-achievements"><h2><i class="bi bi-trophy"></i> Awards and Achievements</h2>' + renderEntryList(cv.awardsAchievements, "No award or achievement records have been added yet.") + '</section>',
       '        <section class="cv-section" id="member-projects"><h2><i class="bi bi-kanban"></i> Projects</h2>' + renderProjectCards(data.projects && data.projects.items, cv.projectIds) + '</section>',
       '        <section class="cv-section" id="member-publications"><h2><i class="bi bi-journal-text"></i> Publications</h2>' + renderPublicationCards(data.publications && data.publications.items, cv.publicationIds) + '</section>',
       '        <section class="cv-section" id="certificates-courses"><h2><i class="bi bi-award"></i> Certificates and Courses</h2>' + renderEntryList(cv.certificatesCourses, "No certificate or course records have been added yet.") + '</section>',
@@ -277,7 +320,7 @@
       if (!id) return;
       var link = document.createElement('a');
       link.className = 'member-cv-link';
-      link.href = 'member-details.html?id=' + encodeURIComponent(id);
+      link.href = 'member-details.html#' + encodeURIComponent(id);
       link.innerHTML = '<i class="bi bi-file-earmark-person"></i> Details / CV';
       card.appendChild(link);
     });

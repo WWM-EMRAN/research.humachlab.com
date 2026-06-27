@@ -2,7 +2,7 @@
   "section": {
     "title": "Member CV Details",
     "subtitle": "Printable member profiles",
-    "description": "Additional CV-style profile content for HUMACH team members, including academic information, experience, projects, publications, certificates, courses, and extracurricular activities."
+    "description": "Additional CV-style profile content for HUMACH team members, including academic information, experience, awards and achievements, projects, publications, certificates, courses, and extracurricular activities."
   },
   "items": [
     {
@@ -489,7 +489,139 @@
           ]
         }
       ],
-      "cvNotes": []
+      "cvNotes": [],
+      "slug": "emran-ali",
+      "awardsAchievements": [
+        {
+          "title": "Bertelsmann Next Generation Tech Booster Scholarship",
+          "organization": "Bertelsmann",
+          "period": "Jun. 09, 2024",
+          "details": "Next Generation Tech Booster Scholarship (Phase 1+2) from Bertelsmann for a Udacity Nanodegree program, valued over $1,500.",
+          "tags": [
+            "Scholarship",
+            "Udacity",
+            "Generative AI",
+            "Professional Development"
+          ]
+        },
+        {
+          "title": "AWS AI/ML Scholarship (Phase 2)",
+          "organization": "AWS",
+          "period": "Feb. 23, 2024",
+          "details": "AWS AI/ML Scholarship Phase 2 to pursue a Udacity Nanodegree program valued at over $5,000.",
+          "tags": [
+            "Scholarship",
+            "AWS",
+            "AI",
+            "Machine Learning",
+            "Udacity"
+          ]
+        },
+        {
+          "title": "AWS AI/ML Scholarship (Phase 1)",
+          "organization": "AWS",
+          "period": "Jun. 05, 2023",
+          "details": "AWS AI/ML Scholarship Phase 1 to pursue a Udacity Nanodegree program valued at over $3,000.",
+          "tags": [
+            "Scholarship",
+            "AWS",
+            "AI",
+            "Machine Learning",
+            "Udacity"
+          ]
+        },
+        {
+          "title": "Cotutelle Studentship",
+          "organization": "Coventry University",
+          "period": "Jan. 15, 2023",
+          "details": "Cotutelle joint studentship as part of the joint doctoral program at Deakin University and Coventry University.",
+          "tags": [
+            "Studentship",
+            "PhD",
+            "Cotutelle",
+            "Deakin",
+            "Coventry"
+          ]
+        },
+        {
+          "title": "Deakin University Postgraduate Research Scholarship (DUPRS)",
+          "organization": "Deakin University",
+          "period": "Jan. 15, 2023 – Ongoing",
+          "details": "Fully funded DUPR Scholarship for joint PhD research at Deakin University and Coventry University.",
+          "tags": [
+            "Scholarship",
+            "PhD",
+            "Research",
+            "DUPRS"
+          ]
+        },
+        {
+          "title": "Best Presentation Award",
+          "organization": "Deakin University, School of IT",
+          "period": "Dec. 19, 2021",
+          "details": "Best Presentation Award at the Annual School Conference, School of IT, Deakin University.",
+          "tags": [
+            "Award",
+            "Presentation",
+            "Research Communication"
+          ]
+        },
+        {
+          "title": "Science and Technology Fellowship (STF)",
+          "organization": "STF Trust, Ministry of Science and Technology, Bangladesh",
+          "period": "Feb. 21, 2020",
+          "details": "Fully funded fellowship for higher education from the Ministry of Science and Technology, Bangladesh.",
+          "tags": [
+            "Fellowship",
+            "Higher Education",
+            "STEM"
+          ]
+        },
+        {
+          "title": "Best Employee Award",
+          "organization": "Advanced Apps Bangladesh (AAPBD) Ltd.",
+          "period": "Jul. 15, 2014",
+          "details": "Best employee of year 2014 at Advanced Apps Bangladesh (AAPBD) Ltd., Bangladesh.",
+          "tags": [
+            "Award",
+            "Software Development",
+            "Industry"
+          ]
+        },
+        {
+          "title": "Country Topper (Bangladesh)",
+          "organization": "South Asian University (SAU)",
+          "period": "Apr. 23, 2013",
+          "details": "Country Topper from Bangladesh in the post-graduation entrance exam for South Asian University, New Delhi, India.",
+          "tags": [
+            "Academic Achievement",
+            "Entrance Exam",
+            "Bangladesh"
+          ]
+        },
+        {
+          "title": "Undergraduate Department Topper",
+          "organization": "Hajee Mohammad Danesh Science and Technology University (HSTU)",
+          "period": "Mar. 02, 2012",
+          "details": "First place from the undergraduate Computer Science and Engineering batch at HSTU, Bangladesh.",
+          "tags": [
+            "Academic Achievement",
+            "CSE",
+            "HSTU"
+          ]
+        },
+        {
+          "title": "Intra-University Programming Contest Champion",
+          "organization": "Hajee Mohammad Danesh Science and Technology University (HSTU)",
+          "period": "Feb. 16, 2009",
+          "details": "Champion of the Intra-University Programming Contest (InUPC) at HSTU, Bangladesh.",
+          "tags": [
+            "Programming Contest",
+            "Champion",
+            "Competitive Programming"
+          ]
+        }
+      ]
     },
     {
       "memberId": "research-collaborators",
@@ -536,7 +668,9 @@
           "details": "Add relevant academic service, mentoring, workshops, or community activity."
         }
       ],
-      "cvNotes": []
+      "cvNotes": [],
+      "slug": "researchers-and-collaborators",
+      "awardsAchievements": []
     },
     {
       "memberId": "development-contributors",
@@ -583,7 +717,9 @@
           "details": "Add GitHub projects, hackathons, club activities, volunteer work, or technical communities."
         }
       ],
-      "cvNotes": []
+      "cvNotes": [],
+      "slug": "development-contributors",
+      "awardsAchievements": []
     },
     {
       "memberId": "research-interns",
@@ -630,7 +766,9 @@
           "details": "Add relevant extracurricular work that supports the intern profile."
         }
       ],
-      "cvNotes": []
+      "cvNotes": [],
+      "slug": "research-interns",
+      "awardsAchievements": []
     },
     {
       "memberId": "development-interns",
@@ -677,7 +815,9 @@
           "details": "Add relevant activities and portfolio contributions."
         }
       ],
-      "cvNotes": []
+      "cvNotes": [],
+      "slug": "development-interns",
+      "awardsAchievements": []
     },
     {
       "memberId": "future-alumni",
@@ -721,7 +861,9 @@
           "details": "Add mentoring, outreach, alumni talks, supervision support, or community contributions."
         }
       ],
-      "cvNotes": []
+      "cvNotes": [],
+      "slug": "future-alumni-network",
+      "awardsAchievements": []
     }
   ]
 }
